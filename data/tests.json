@@ -1,0 +1,3304 @@
+{
+  "tests": [
+    {
+      "id": 1,
+      "title": "TEST 1",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions from 1 to 10.\n\nJames Watt, a Scottish inventor, played a crucial role in the Industrial Revolution. Born in 1736, he made significant contributions to the development of the steam engine, which transformed industries and transportation.\n\nWatt's interest in mechanics started at an early age. Despite facing challenges, including poor health and limited resources, he remained determined and curious. In 1763, while repairing a model of a steam engine, Watt had a breakthrough. He realised that by adding a separate condenser, steam engines could be more efficient. This breakthrough laid the foundation for his future work.\n\nWith support from businessman Matthew Boulton, Watt refined his ideas and gained the official legal right to manufacture his improved steam engine in 1769. The Watt steam engine revolutionised industries such as mining, textile manufacturing, and transportation. It powered factories, mills, and ships, driving progress during the Industrial Revolution.\n\n[I] He continued to refine and enhance his steam engine, making it safer, more reliable, and more economical. [II] The increased efficiency and power of steam engines led to the mechanisation of production processes, resulting in higher productivity and lower costs. [III] This, in turn, helped cities develop as people migrated from rural areas to cities in search of employment opportunities in factories powered by steam. [IV] Additionally, steam-powered trains and ships made it much more convenient to transport goods and people.\n\nBeyond these technical achievements, Watt's legacy lives on as a symbol of innovation and ingenuity. The unit of power, the watt, was named in his honour, recognising his pioneering contributions to science and engineering. Despite facing obstacles, he turned challenges into opportunities, leaving a lasting impact on history and inspiring future generations."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Where in this passage does the following sentence best fit?\n“However, Watt didn't stop there.”",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "The word “breakthrough” in paragraph 2 is closest in meaning to",
+            "options": {
+              "A": "discovery",
+              "B": "motivation",
+              "C": "consequence",
+              "D": "enhancement"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "The word “he” in paragraph 2 refers to:",
+            "options": {
+              "A": "James Watt",
+              "B": "Matthew Boulton",
+              "C": "businessman",
+              "D": "Matthew Boulton, Watt"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "The phrase “laid the foundation” in paragraph 2 is OPPOSITE in meaning to:",
+            "options": {
+              "A": "created the basis",
+              "B": "set the stage",
+              "C": "paved the way",
+              "D": "ignored the foundation"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "According to the passage, which is NOT true about James Watt?",
+            "options": {
+              "A": "He found mechanics interesting when he was young.",
+              "B": "There is a unit of power named after him to honour his contributions.",
+              "C": "His impact spans across history, the present, and the future.",
+              "D": "He had many favourable conditions to nurture his interest in machinery."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Which of the following best summarizes paragraph 3?",
+            "options": {
+              "A": "James Watt’s steam engine made significant contributions to industrial efficiency and transportation.",
+              "B": "James Watt’s invention primarily benefited the textile industry.",
+              "C": "Watt’s steam engine was only used for transportation and not in factories.",
+              "D": "The steam engine invention was mostly used in mining industries."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "James Watt invented the electric motor and had little impact on industrial machinery.",
+              "B": "Watt’s steam engine was only used in the textile manufacturing industry.",
+              "C": "Watt continued to improve his steam engine, making it safer, more reliable, and more economical.",
+              "D": "Watt’s contributions were mainly in the field of medical technology."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Which of the following best paraphrases the underlined part in paragraph 5?",
+            "options": {
+              "A": "Watt’s ideas were forgotten after his death.",
+              "B": "Watt’s achievements are still recognized and inspire future generations.",
+              "C": "Watt’s contributions were mainly focused on improving transportation methods.",
+              "D": "Watt’s impact is limited to his inventions and did not influence later innovations."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "James Watt’s inventions significantly improved the productivity of factories and cities.",
+              "B": "The steam engine invention led to the decline of urbanization.",
+              "C": "Watt’s steam engine was only effective in rural areas.",
+              "D": "Watt's impact on transportation was limited to ships."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Which of the following best summarizes the passage?",
+            "options": {
+              "A": "Born in Scotland, James Watt revolutionized the Industrial Revolution by improving the steam engine, which significantly impacted industries, transportation, and urban development",
+              "B": "James Watt focused solely on the invention of the electric motor and had little impact on industrial machinery.",
+              "C": "James Watt’s primary contribution was in medical technology, specifically developing devices to aid in treating diseases.",
+              "D": "James Watt's inventions were limited to transportation and had no significant influence on industrial production."
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following announcement and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 11 to 16.\n\nDefying Odds: Life Stories That Challenge the Impossible\n\n⮚ While some people give up easily in their daily struggles, (11)______ persist through challenges with remarkable determination. When facing difficulties in their personal and professional lives, successful people never (12)______ their ambitious dreams and meaningful goals.\n\n⮚ Their (13)______ in difficult times and unexpected setbacks sets them apart. (14)_____ all challenges and numerous obstacles along the way, they kept moving forward.\n\n⮚ Their unwavering determination through countless (15)__ became their greatest strength. A (16)______ of successful people from various backgrounds and different cultures started from humble beginnings.\n\n❖ Join us for an inspiring evening of remarkable stories that will change your perspective on what's possible."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "the others",
+              "B": "others",
+              "C": "another",
+              "D": "other"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "give up on",
+              "B": "back down from",
+              "C": "shy away from",
+              "D": "move on from"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (13) trong nội dung phía trên.",
+            "options": {
+              "A": "preservation",
+              "B": "integration",
+              "C": "resilience",
+              "D": "inspiration"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (14) trong nội dung phía trên.",
+            "options": {
+              "A": "According to",
+              "B": "On account of",
+              "C": "In spite of",
+              "D": "Independent of"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (15) trong nội dung phía trên.",
+            "options": {
+              "A": "challenges",
+              "B": "obstacles",
+              "C": "setbacks",
+              "D": "failures"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (16) trong nội dung phía trên.",
+            "options": {
+              "A": "majority",
+              "B": "handful",
+              "C": "number",
+              "D": "lot"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about Solving Climate Challenges with Creativity and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 17 to 24.\n\nClimate change represents one of the greatest challenges of our time, threatening ecosystems and communities worldwide. Fortunately, a new generation of creative problem-solvers, known as green innovators, is developing remarkable solutions to address these urgent environmental issues. These individuals combine scientific knowledge with creative thinking to design technologies that reduce carbon emissions, conserve natural resources, and promote sustainable living. Unlike traditional approaches that often prioritize short-term economic gains, these innovators focus on long-term environmental sustainability.\n\nMany impressive examples of green innovation have emerged in recent years. Solar-powered devices now capture energy even on cloudy days, while advanced recycling systems transform plastic waste into valuable construction materials. In agriculture, vertical farming techniques allow crops to grow in urban environments using 95% less water than conventional methods. Additionally, innovative transportation solutions include electric vehicles powered by renewable energy and bicycles made from sustainable bamboo. These creative approaches demonstrate how human ingenuity can tackle seemingly insurmountable environmental problems.\n\nDespite their promising work, green innovators face significant obstacles. Limited funding remains a persistent challenge, as investors sometimes hesitate to support projects with longer development timelines. Government regulations, which vary greatly between countries, can either help or hinder innovation depending on their implementation. Furthermore, public skepticism about new technologies occasionally slows adoption rates, even when these solutions prove effective.\n\nThe coming decades will likely witness an acceleration of green innovation as climate concerns intensify. Educational institutions increasingly incorporate sustainability into their curricula, preparing students to develop the next generation of environmental solutions. Meanwhile, consumers are becoming more environmentally conscious, creating growing markets for sustainable products and services. By supporting these creative problem-solvers through investment, policy changes, and personal choices, we can all contribute to a greener, more sustainable world."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "Which of the following is NOT mentioned as a challenge faced by green innovators?",
+            "options": {
+              "A": "Lack of technical expertise",
+              "B": "Limited funding from investors",
+              "C": "Public skepticism about new technologies",
+              "D": "Varying government regulations"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "The word “remarkable” in paragraph 1 is OPPOSITE in meaning to _________.",
+            "options": {
+              "A": "exceptional",
+              "B": "noteworthy",
+              "C": "ordinary",
+              "D": "outstanding"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "The word “conventional” in paragraph 2 could be best replaced by _________.",
+            "options": {
+              "A": "modern",
+              "B": "experimental",
+              "C": "innovative",
+              "D": "traditional"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "The word “their” in paragraph 3 refers to _________.",
+            "options": {
+              "A": "countries",
+              "B": "government regulations",
+              "C": "innovations",
+              "D": "green innovators"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 4?",
+            "options": {
+              "A": "Innovations in sustainability are anticipated to increase speed as global warming fears escalate.",
+              "B": "Climate change awareness will probably drive rapid advances in sustainable solutions during future decades.",
+              "C": "Environmental technologies may develop more quickly in subsequent decades because of heightened climate anxiety.",
+              "D": "Future years are expected to see faster development of eco-friendly technologies due to growing environmental worries."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Vertical farming techniques use ninety-five percent less water than traditional agricultural methods.",
+              "B": "Government regulations for environmental innovation remain uniform across different countries worldwide.",
+              "C": "Investors are consistently eager to support green projects despite their extended development timelines.",
+              "D": "Public skepticism about environmental technologies has completely stopped their widespread adoption."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "In which paragraph does the writer mention types of green innovations are mentioned?",
+            "options": {
+              "A": "Paragraph 2",
+              "B": "Paragraph 1",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "In which paragraph does the writer mention the outlook for green innovation is positive if properly supported?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 4",
+              "C": "Paragraph 2",
+              "D": "Paragraph 3"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a cohesive and coherent exchange or text in each of the following questions from 25 to 29."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "a. John: Hello Anna, yes, his vision and innovation truly revolutionized technology.\nb. Anna: Hello John, Steve Jobs' life is so inspiring. He turned failure into one of the greatest successes.\nc. Anna: He proved that thinking differently can change the world.",
+            "options": {
+              "A": "a-c-b",
+              "B": "b-a-c",
+              "C": "b-c-a",
+              "D": "c-a-b"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "a. Taylor Swift is a highly successful musician who has worked tirelessly to achieve her goals, starting her career at a young age.\nb. Her ability to evolve as an artist and her passion for music continue to inspire millions, proving that hard work and perseverance can lead to greatness.\nc. She not only transitioned from country to pop music but also gained worldwide recognition for her songwriting and performances.\nd. She has also used her platform to speak out on important social issues like gender equality and LGBTQ+ rights.\ne. Throughout her career, Taylor has won numerous awards, including 12 Grammy Awards, which highlight her dedication to excellence.",
+            "options": {
+              "A": "e-a-c-b-d",
+              "B": "e-c-a-b-d",
+              "C": "a-c-e-d-b",
+              "D": "d-e-a-c-b"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "a. Linh: Why are you interested in traditional festivals?\nb. Nam: I’m planning to visit one this weekend to learn more about it.\nc. Linh: How do you plan to explore more of our cultural heritage?\nd. Nam: They help me connect with our history and understand our values.\ne. Linh: That’s great! Wish you goof trip.",
+            "options": {
+              "A": "c – b – a – d – e",
+              "B": "c – e – d – b – a",
+              "C": "d – b – a – e – c",
+              "D": "c – b – e – a – d"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Dear John,\nI hope this letter finds you well.\na. Our planet faces many challenges, so I’ve started using reusable bags and bottles, turning off unused lights, and using energy-efficient appliances to reduce waste and save energy.\nb. I’ve also started supporting local businesses that focus on eco-friendly products and practices.\nc. I believe these small steps can lead to a big difference, and I’d love to hear how you’ve been living more sustainably.\nd. I wanted to share my thoughts on living more sustainably, as it has become increasingly important to me.\ne. Additionally, I’ve been using public transport more often and planted a few trees in my garden to help improve air quality.\nBest regards,\nSarah",
+            "options": {
+              "A": "c-b-e-a-d",
+              "B": "d-b-e-c-a",
+              "C": "d-a-e-b-c",
+              "D": "b-c-e-d-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "a. These individual efforts, when combined with broader policy changes and community involvement, can lead to a significant positive impact on global environmental health.\nb. Green living has become a crucial part of tackling the environmental crises we face today, as it not only helps preserve natural resources but also ensures the well-being of future generations.\nc. By making small changes such as reducing plastic consumption, using energy-efficient appliances, and opting for eco-friendly transportation methods like cycling or using electric cars, we can dramatically reduce our carbon footprint.\nd. Shifting towards a plant-based diet further contributes to sustainability, as the agricultural industry, particularly livestock farming, is one of the leading contributors to deforestation and greenhouse gas emissions.\ne. In addition, many people are adopting renewable energy solutions, like solar panels or wind turbines, which, in the long run, not only decrease our reliance on non-renewable resources but also lower electricity bills.",
+            "options": {
+              "A": "b-e-c-a-d",
+              "B": "b-e-c-d-a",
+              "C": "d-a-e-c-a",
+              "D": "b-c-e-d-a"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following advertisement and mark the letter A, B, C and D on your answer sheer to indicate the option that best fit each of the numbered blanks from 30 to 35.\n\nEnd Plastic Pollution Now!\n\nPlastic pollution is an alarming issue threatening our planet. Every year, millions of tons of plastic waste end up in the oceans, harming both marine life and fragile ecosystems. The ever-growing piles of discarded plastics are not only (30) ______ the environment but also leaving humans feeling increasingly (31) ______ about their health.\n\nTo combat this crisis, we need a global (32) ______ that actively promotes recycling and minimizes single-use plastics. Organizations (33) ______ awareness about sustainable alternatives play a vital role in driving this movement forward.\n\nCommunities can join the fight by donating funds (34) ______ initiatives specifically aimed at cleaning polluted rivers and beaches. Additionally, adopting eco-friendly habits, such as using reusable bags and bottles, can significantly reduce our plastic footprint.\n\nRemember, every small effort matters. By (35) ______ immediate action today, we can safeguard our planet for future generations. Together, let’s put an end to plastic pollution!"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (30) trong nội dung phía trên.",
+            "options": {
+              "A": "concern",
+              "B": "concerning",
+              "C": "to concern",
+              "D": "concerned"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (31) trong nội dung phía trên.",
+            "options": {
+              "A": "to damage",
+              "B": "damaging",
+              "C": "damaged",
+              "D": "to damaging"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (32) trong nội dung phía trên.",
+            "options": {
+              "A": "waste system management",
+              "B": "management system waste",
+              "C": "system waste management",
+              "D": "waste management system"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (33) trong nội dung phía trên.",
+            "options": {
+              "A": "raising",
+              "B": "raised",
+              "C": "to raising",
+              "D": "to raise"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (34) trong nội dung phía trên.",
+            "options": {
+              "A": "about",
+              "B": "with",
+              "C": "to",
+              "D": "on"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (35) trong nội dung phía trên.",
+            "options": {
+              "A": "having",
+              "B": "making",
+              "C": "setting up",
+              "D": "taking"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks.\n\nGREEN LIVING: A PATH TO A SUSTAINABLE FUTURE\n\nGreen living is essential in today’s world to protect the environment and conserve resources for future generations. Many people are adopting eco-friendly habits to reduce environmental damage. One way to live green is by reducing energy consumption. Those who turn off lights and appliances when not in use help save electricity, (36) __________.\n\nAnother significant aspect is recycling. People who recycle materials such as plastic, paper, and glass help to reduce waste and conserve valuable resources. Having recycled materials processed into new products minimizes the need for raw materials and reduces pollution. In addition, choosing to walk, cycle, or (37) _______ and decrease dependence on fossil fuels. These small changes collectively contribute to a cleaner environment and a sustainable future.\n\nWater conservation is also a critical element of green living. Fixing leaks and using water-efficient appliances helps conserve this precious resource. By adopting these habits, (38) ________.\n\nSupporting sustainable farming practices is another vital part of green living. Choosing organic and locally grown products supports eco-friendly farming methods and reduces harmful environmental impacts.\n\nHaving adopted eco-friendly habits, (39) _______, conserving natural resources, and promoting sustainability. In conclusion, green living not only protects the planet but also improves quality of life. (40) _______."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (36) trong nội dung phía trên.",
+            "options": {
+              "A": "whose actions help save electricity and conserve resources",
+              "B": "which helps reduce carbon emissions and does not contribute to a healthier planet",
+              "C": "which reduces their carbon footprint and contributes to a healthier planet",
+              "D": "helped reduce their carbon footprint and lower their environmental impact"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (37) trong nội dung phía trên.",
+            "options": {
+              "A": "use public transportation instead of driving is an excellent way to cut down on air pollution",
+              "B": "public transportation should be used instead of driving to help reduce air pollution and promote a cleaner",
+              "C": "using public transportation instead of driving, individuals can significantly reduce air pollution",
+              "D": "choose gasoline cars, which have higher emissions and a greater environmental impact than electric cars"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (38) trong nội dung phía trên.",
+            "options": {
+              "A": "we save more energy and reduce the amount of electricity we use every day",
+              "B": "future generations may no longer have access to in their lifetime",
+              "C": "which significantly contributes to reducing water waste and conserving resources",
+              "D": "we ensure that future generations will have access to clean water"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (39) trong nội dung phía trên.",
+            "options": {
+              "A": "people can make a significant impact on the environment by reducing their carbon footprint",
+              "B": "positive impacts play a big role in creating a good environment by reducing carbon emissions",
+              "C": "individuals with good habits have built a stable environment with a significantly reduced carbon footprint",
+              "D": "reducing their carbon footprint more easily and making a positive impact on the environment"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (40) trong nội dung phía trên.",
+            "options": {
+              "A": "With big actions every day, each individual is contributing to building a sustainable future for the community",
+              "B": "Without taking responsibility for our environmental impact, future generations may struggle to live on a healthy planet",
+              "C": "If we continue to conserve the environment, the planet will not face irreparable damage in the near future",
+              "D": "By making small changes in our daily habits, we can create a more sustainable future for everyone"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "TEST 2",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following festival description and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 6.\n\nTHE MID-AUTUMN FESTIVAL\n\nThe Mid-Autumn Festival is a traditional celebration (1) ______ on the 15th day of the eighth lunar month. It is widely known in many Asian countries. In Vietnam, it is a (2) ______ occasion for families to gather, and for children to enjoy various activities. Children tend (3) ______ up the streets with colorful lanterns of all shapes and sizes, creating a festive atmosphere. Mooncakes, a symbolic treat of the festival, are shared (4) ______ family members and given as gifts to friends. Children participate in lion dances, play folk games, and listen to the legend of the Moon Lady and the Moon Boy. The festival also represents the appreciation of a (5) ______. It’s not only a cultural event but also a cherished time to express love, gratitude, and unity. Even today, it still (6) ______ an important part of Vietnamese culture."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (1) trong nội dung phía trên.",
+            "options": {
+              "A": "which held",
+              "B": "holding",
+              "C": "held",
+              "D": "is held"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (2) trong nội dung phía trên.",
+            "options": {
+              "A": "specialize",
+              "B": "special",
+              "C": "specialty",
+              "D": "specially"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (3) trong nội dung phía trên.",
+            "options": {
+              "A": "lighting",
+              "B": "light",
+              "C": "to lighting",
+              "D": "to light"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (4) trong nội dung phía trên.",
+            "options": {
+              "A": "with",
+              "B": "among",
+              "C": "to",
+              "D": "for"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (5) trong nội dung phía trên.",
+            "options": {
+              "A": "successful harvest season",
+              "B": "season harvest successful",
+              "C": "harvest successful season",
+              "D": "successful season harvest"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (6) trong nội dung phía trên.",
+            "options": {
+              "A": "takes",
+              "B": "makes",
+              "C": "plays",
+              "D": "sets"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following leaflet and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks.\n\nIMPACT OF AIR POLLUTION ON HEALTH\n\nAir pollution poses a significant threat to public health, affecting millions of people worldwide. Exposure to polluted air, containing harmful substances like particulate matter and toxic gases, has been linked to (7) ______ of serious health conditions.\n\n• Health Risks of Air Pollution: Plenty of studies have shown that long-term exposure to polluted air can (8) ______ respiratory diseases, such as asthma and bronchitis. In addition to respiratory issues, (9) ______ chronic illnesses like heart disease and lung cancer are also on the (10) ______ due to poor air quality. (11) ______ just affecting those with pre-existing conditions, air pollution increasingly impacts the general population, including children and the elderly.\n\n• Taking Action Governments and organizations must work together to reduce emissions and promote cleaner energy alternatives. By (12) ______ this urgent issue, we can protect future generations and significantly improve public health."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (7) trong nội dung phía trên.",
+            "options": {
+              "A": "lot",
+              "B": "a great deal",
+              "C": "a variety",
+              "D": "the amount"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (8) trong nội dung phía trên.",
+            "options": {
+              "A": "lead to",
+              "B": "bring in",
+              "C": "pass out",
+              "D": "result from"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (9) trong nội dung phía trên.",
+            "options": {
+              "A": "others",
+              "B": "another",
+              "C": "other",
+              "D": "the other"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (10) trong nội dung phía trên.",
+            "options": {
+              "A": "growth",
+              "B": "process",
+              "C": "spot",
+              "D": "rise"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "Instead of",
+              "B": "As a result of",
+              "C": "On account of",
+              "D": "Regardless of"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "concerning",
+              "B": "addressing",
+              "C": "emphasizing",
+              "D": "neglecting"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 13 to 17."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "a. Sarah: That’s a good idea! I’ll also try to reduce my plastic usage.\nb. John: A great place to start is by using public transport or cycling instead of driving.\nc. Sarah: I’ve been trying to reduce my carbon footprint, but I’m not sure where to start.",
+            "options": {
+              "A": "c-b-a",
+              "B": "a-b-c",
+              "C": "b-a-c",
+              "D": "b-c-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "a. Tracy: I'm sure you've learned about Vietnam's culinary culture before coming here.\nb. Tom: That's right. I am really impressed with Vietnamese cuisine. Everything is really delicious.\nc. Tracy: So what dishes have you eaten?\nd. Tracy: Is this your first time coming to Vietnam?\ne. Tom: Oh. A lot. Quang noodles, Hanoi pho, Hanoi vermicelli, mixed rice paper and especially Hoi An Cao Lau is very tasty.",
+            "options": {
+              "A": "d-c-a-b-e",
+              "B": "d-b-c-e-a",
+              "C": "d-e-a-b-c",
+              "D": "d-e-b-c-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "a. I am writing to express my concern about the increasing littering problem in our neighborhood, which has become a serious issue over the past few months.\nb. Additionally, the waste not only affects the appearance of our community but also poses a threat to public health.\nc. I would appreciate it if the local authorities could take immediate action by increasing waste bins in the area and launching a community awareness campaign.\nd. I have noticed that garbage is often scattered in public spaces, particularly near playgrounds and sidewalks, which is both unsightly and hazardous.\ne. Thank you for your attention to this matter, and I hope we can work together to keep our neighborhood clean and safe for everyone.",
+            "options": {
+              "A": "a-b-d-c-e",
+              "B": "d-a-b-c-e",
+              "C": "d-b-c-a-e",
+              "D": "a-d-b-c-e"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "a. Mandela's leadership and peaceful resistance earned him the Nobel Peace Prize in 1993.\nb. He was imprisoned for 27 years for opposing apartheid but emerged as a symbol of hope and resilience.\nc. Mandela's legacy of reconciliation and justice continues to inspire people around the world.\nd. Nelson Mandela, born in 1918 in Mvezo, South Africa, fought against apartheid and dedicated his life to racial equality.\ne. After his release, he became South Africa's first Black President, leading efforts to rebuild a divided nation.",
+            "options": {
+              "A": "d-b-e-a-c",
+              "B": "d-e-a-b-c",
+              "C": "e-d-b-a-c",
+              "D": "e-d-c-a-b"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "a. Additionally, choosing eco-friendly products and supporting renewable energy sources, such as solar or wind power, contributes to a greener planet.\nb. Planting trees helps reduce carbon dioxide levels and improves air quality.\nc. Simple actions like reducing plastic use, recycling, and conserving water can make a significant difference.\nd. It’s important for individuals, businesses, and governments to work together to preserve natural resources, reduce pollution, and combat climate change for future generations.\ne. Protecting the environment is crucial for ensuring a healthy and sustainable future.\n[Adapted from World Wildlife Fund and United Nations Environment Programme materials]",
+            "options": {
+              "A": "e-c-b-a-d",
+              "B": "e-a-c-d-b",
+              "C": "e-c-a-b-d",
+              "D": "d-e-a-c-b"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about Cristiano Ronaldo and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 18 to 22.\n\nCristiano Ronaldo, one of the world's most famous football players, (18) ____. Born on February 5, 1985, on the Portuguese island of Madeira, Ronaldo grew up in a poor family, (19) ____. From a young age, he loved football, and he practiced every chance he got. His father, a kit man at a local football club, supported his dream. At just 12 years old, Ronaldo moved to Lisbon alone to join Sporting CP's academy, a big step that took him closer to his goal.\n\nIn 2003, Manchester United, a top football club in England, signed him, and his career took off. (20) ____. His impressive performances led to a record transfer to Real Madrid in 2009, where he continued to break records, scoring 450 goals in 438 matches. During his time in Spain, he won four more Ballon d'Or awards, further establishing his legacy. After a successful stint at Real Madrid, (21) ____. In 2021, he returned to Manchester United, proving his enduring talent and passion for the game. In 2023, he made a new move to Al Nassr, a prominent football club in the Saudi Pro League, showing he can still play at a high level even in his late 30s. Al Nassr is known for its vibrant fan base and competitive spirit. (22) ____. Today, he is not only known for his skills on the pitch but also for his philanthropic efforts, inspiring many around the world."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (18) trong nội dung phía trên.",
+            "options": {
+              "A": "that defines resilience, ambition, and unmatched talent through his life",
+              "B": "who is definitely a talented, ambitious and resilient man",
+              "C": "has a life story defined by resilience, ambition, and unmatched talent",
+              "D": "having been defined as a talented, ambitious and resilient man"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (19) trong nội dung phía trên.",
+            "options": {
+              "A": "whose financial struggles made his journey even harder",
+              "B": "made his journey become harder due to financial struggles",
+              "C": "of which financial struggles adding extra challenges to his journey",
+              "D": "caused financial difficulties to his journey that he kept struggling"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (20) trong nội dung phía trên.",
+            "options": {
+              "A": "Ronaldo helped Sir Alex Ferguson win three Premier League titles and the UEFA Champions League, earning his first Ballon d'Or in 2008",
+              "B": "Under coach Sir Alex Ferguson's guidance, he won three Premier League titles, the UEFA Champions League, and his first Ballon d'Or in 2008",
+              "C": "Sir Alex Ferguson won three Premier League titles, the UEFA Champions League, and his first Ballon d'Or in 2008 as Ronaldo's coach",
+              "D": "In 2008, Ronaldo's great efforts brought Sir Alex Ferguson three Premier League titles, the Champions League, and the first Ballon d'Or"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (21) trong nội dung phía trên.",
+            "options": {
+              "A": "Ronaldo struggled to perform well after joining Juventus in 2018",
+              "B": "Juventus helped Ronaldo improve his skills after he joined in 2018",
+              "C": "Juventus began shining after Ronaldo's transfer in 2018",
+              "D": "Ronaldo joined Juventus in 2018, where he continued to shine"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (22) trong nội dung phía trên.",
+            "options": {
+              "A": "Ronaldo's presence has significantly boosted the club's profile, making it a key player in the league",
+              "B": "Since Ronaldo joined, the league itself has gained popularity and attracted more talented players and fans",
+              "C": "After Ronaldo joined the club, its reputation and profile within the league began to decline",
+              "D": "The club's reputation helped Ronaldo improve his performance, making him more well-known in the league"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about carbon footprint and mark the letter A, B, C or D to indicate the best answer to each of the following questions from 23 to 30.\n\nA carbon footprint refers to the total amount of greenhouse gases emitted directly or indirectly by human activities, such as transportation, electricity usage, and the production of goods and services. These gases, primarily carbon dioxide (CO2), trap heat in the atmosphere and contribute to global warming. Every individual, organization, and product has a carbon footprint, and its size depends on various factors such as energy efficiency, consumption patterns, and waste management.\n\nReducing a carbon footprint is crucial to mitigating climate change. One of the most effective ways to achieve this is by using alternative energy sources, like solar or wind power, instead of fossil fuels. Switching to energy-efficient appliances and reducing reliance on cars by walking, cycling, or using public transport also help minimize emissions. Additionally, planting trees and conserving forests are nature-based methods of absorbing CO2 from the atmosphere, thereby reducing the overall carbon footprint.\n\nRecently, organizations, governments, and individuals have been taking action to address the issue. For instance, many companies have adopted greener business models to reduce their emissions, while some countries have implemented carbon pricing policies to encourage industries to lower their carbon output. Such policies are designed to financially motivate businesses to cut their greenhouse gas emissions.\n\nPublic awareness campaigns also educate individuals on how small changes in daily habits can have a significant impact on the environment, like turning off lights when not in use or reducing plastic consumption. By making conscious efforts to adopt sustainable practices, we can collectively reduce carbon footprints and slow the rate of climate change, protecting the planet for future generations."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "Which of the following is NOT mentioned as a way to reduce the carbon footprint?",
+            "options": {
+              "A": "Planting trees and forests",
+              "B": "Using renewable energy sources",
+              "C": "Applying carbon pricing policies",
+              "D": "Recycling all the materials"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "The word its in paragraph 1 refers to _____.",
+            "options": {
+              "A": "waste management",
+              "B": "carbon footprint",
+              "C": "organization",
+              "D": "product"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "The word mitigating in paragraph 2 is OPPOSITE in meaning to ____.",
+            "options": {
+              "A": "reducing",
+              "B": "preventing",
+              "C": "intensifying",
+              "D": "managing"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "The word adopted in paragraph 3 could be best replaced by _____.",
+            "options": {
+              "A": "abandoned",
+              "B": "accepted",
+              "C": "created",
+              "D": "ignored"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 4?",
+            "options": {
+              "A": "Public awareness campaigns encourage people to make small changes in their habits, which can greatly affect the environment.",
+              "B": "Governments use public campaigns to teach individuals about reducing carbon emissions in theory and practices.",
+              "C": "Awareness campaigns show that reducing plastic consumption in daily habits has the largest impact on the environment.",
+              "D": "Individuals need to change all their daily habits to have any positive effect on public awareness campaigns and the environment."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Only organizations can have a carbon footprint and affect the environment.",
+              "B": "Trees can absorb carbon dioxide, reducing the overall carbon footprint.",
+              "C": "Reducing plastic consumption does not affect the carbon footprint.",
+              "D": "Carbon pricing policies are no longer effective in cutting overall emissions."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "In which paragraph does the writer mention a financial mechanism used to encourage industries to cut emissions?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "In which paragraph does the writer explore natural methods of reducing carbon dioxide in the atmosphere?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about the environmental impact of festivals and the solutions and mark the letter A, B, C or D to indicate the best answer to each of the following questions from 31 to 40.\n\n[I] Many traditional and modern festivals, though culturally significant, often cause considerable harm to the environment. [II] These events typically attract large crowds, which lead to increased waste generation, higher energy consumption, and significant carbon emissions. For instance, the widespread use of disposable plastics, single-use items, and non-recyclable materials at festivals results in a massive amount of waste, much of which ends up creating huge landfills or, worse, pollutes oceans and rivers. [III] In addition, the energy required to power stages, sound systems, and lighting is typically sourced from fossil fuels, which contribute to global warming through the release of greenhouse gases. [IV]\n\nOne of the main contributors to the environmental impact of festivals is transportation. Many attendees travel long distances by car, bus, or even plane, adding significantly to the carbon footprint of these events. The influx of visitors also strains local resources like water, food supplies, and waste management services. Festivals held in natural or rural environments can be especially damaging, as large crowds trample fragile ecosystems, disturb wildlife, and leave behind litter. These ecosystems are often not resilient enough to recover quickly, leading to long-term consequences for local biodiversity and community sustainability. If festivals do not take responsibility for their impact, these consequences could worsen over time.\n\nFortunately, there are several practical solutions to make festivals more environmentally friendly. One of the most effective strategies is to use renewable energy sources, such as solar or wind power, to run festival operations. This shift could drastically reduce carbon emissions compared to relying on traditional, non-renewable energy sources. Moreover, festival organizers can introduce stricter waste management systems, encouraging attendees to reduce, reuse, and recycle. Providing adequate recycling bins, banning single use plastics, and promoting the use of compostable materials can significantly reduce the waste left behind.\n\nAnother important solution is promoting greener transportation options. Festival organizers can incentivize the use of public transportation, offer shuttle services, or encourage carpooling. Offering discounts or rewards for attendees who use eco-friendly travel options can greatly reduce the carbon footprint of the event. In addition, festivals can use their platform to raise environmental awareness by incorporating educational campaigns and activities that highlight the importance of sustainability. By making these changes, festivals can continue to thrive without compromising the health of the planet."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Where in paragraph 1 does the following sentence best fit?\nThey are held in fragile natural environments, where the impact of large crowds is even more noticeable.",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "The phrase ends up in paragraph 1 could be best replaced by ____.",
+            "options": {
+              "A": "results in",
+              "B": "takes up",
+              "C": "turns out",
+              "D": "carries out"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "The word resilient in paragraph 2 is OPPOSITE in meaning to ____.",
+            "options": {
+              "A": "solid",
+              "B": "temporary",
+              "C": "capable",
+              "D": "vulnerable"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "The word their in paragraph 2 refers to ____.",
+            "options": {
+              "A": "attendees",
+              "B": "festivals",
+              "C": "organizers",
+              "D": "environments"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "According to paragraph 2, which of the following is NOT mentioned as an environmental problem caused by festivals?",
+            "options": {
+              "A": "harm to wildlife",
+              "B": "strain on local resources",
+              "C": "increase in energy use",
+              "D": "water pollution"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "Which of the following best summarises paragraph 3?",
+            "options": {
+              "A": "Festivals should prioritize using renewable energy sources and proper waste management to reduce their environmental impact.",
+              "B": "Festivals can become more sustainable by banning the use of plastics and encouraging recycling everything released after the events.",
+              "C": "Festivals have a significant carbon footprint that must be reduced by government strict regulations, not only by individuals.",
+              "D": "Waste reduction and carpooling are the two best ways to reduce environmental harm caused by festivals."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Most festivals use renewable energy, but find it difficult to reduce carbon emissions.",
+              "B": "Many festivals negatively impact natural environments and wildlife.",
+              "C": "Festivals have successfully eliminated the use of disposable plastics.",
+              "D": "Festival-goers mainly use public transportation to reduce their carbon footprint."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 3?",
+            "options": {
+              "A": "Having enough bins and promoting composting at festivals reduces the amount of trash produced.",
+              "B": "Organizers can reduce waste at festivals by encouraging the use of recycled and compostable products.",
+              "C": "Compostable materials and more recycling bins can help cut down on waste and lower the environmental damage caused by festivals.",
+              "D": "Festivals can avoid all environmental problems if they focus on providing bins and using compostable materials."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "Festival organizers play a crucial role in reducing the environmental impact of festivals.",
+              "B": "Public awareness campaigns have successfully reduced the environmental impact of festivals.",
+              "C": "Festivals are the main cause of environmental damage in rural and natural areas.",
+              "D": "Renewable energy is more expensive but essential for festivals to become sustainable."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Which of the following best summarises the passage?",
+            "options": {
+              "A": "Festivals are an important part of modern culture, but they can harm the environment; therefore, stricter regulations by governments are necessary in any circumstances.",
+              "B": "While festivals often harm the environment, practical solutions like using renewable energy and promoting eco-friendly transportation can help reduce their impact.",
+              "C": "The environmental damage caused by festivals is largely due to transportation and waste, but festivals are too important to change.",
+              "D": "Festivals have a significant carbon footprint, and only public awareness campaigns can reduce their environmental impact."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "TEST 3",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following advertisement and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 6 .\n\nNHA TRANG CYCLO TOUR\n\nLooking for a unique way to explore Nha Trang? Join our Cyclo Tour and immerse yourself in the vibrant culture, history, and architecture of this (1) ____. It’s the perfect place (2) ___ the sights and sounds of the city\n\nYou will experience\n\n• Experience the largest market in Nha Trang, famous (3) ______ its wide variety of goods such as seafood, local specialties, souvenirs, and clothing\n\n• Ponagar Tower, where visitors can explore the ancient architecture and culture of the Cham people\n\n• Visit the highlight of Long Son Pagoda, (4) ______ a 24-meter-tall White Buddha statue, known as a sacred symbol\n\n• Discover the (5) _______ Gothic architectural masterpiece, entirely built of stone\n\n• Experience the traditional cyclo ride - a unique way to enjoy the scenery and relax while exploring Nha Trang\n\nBook your Cyclo Tour now and let us (6) ______ you on a ride to the city’s most famous attractions.\n\n(Adapted from Letsfly travel.vn)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (1) trong nội dung phía trên.",
+            "options": {
+              "A": "beautiful coastal city",
+              "B": "coastal beautiful city",
+              "C": "city coastal beautiful",
+              "D": "coastal city beautiful"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (2) trong nội dung phía trên.",
+            "options": {
+              "A": "to enjoying",
+              "B": "to enjoy",
+              "C": "enjoying",
+              "D": "enjoy"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (3) trong nội dung phía trên.",
+            "options": {
+              "A": "on",
+              "B": "about",
+              "C": "for",
+              "D": "with"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (4) trong nội dung phía trên.",
+            "options": {
+              "A": "which is featured",
+              "B": "featured",
+              "C": "featuring",
+              "D": "is featured"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (5) trong nội dung phía trên.",
+            "options": {
+              "A": "renowns",
+              "B": "renown",
+              "C": "renowning",
+              "D": "renowned"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (6) trong nội dung phía trên.",
+            "options": {
+              "A": "take",
+              "B": "make",
+              "C": "set",
+              "D": "get"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following leaflet and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 7 to 12.\n\nOur Planet, Our Home: Simple Steps for a Sustainable Future\n\nLet's look at what we can do in our daily lives, both at home and beyond, to help save our planet.\n\nFacts and Figures:\n\nIndustrial farming using chemicals has negatively impacted insect populations and (7) ________ wildlife. In\n\naddition, we (8) ________ a massive amount of waste daily, including millions of cans and tons of plastic.\n\nFurthermore, public lighting and advertising consume a significant amount of electricity, and we need to\n\nreduce consumption by 5-7% by 2025.\n\nPositive Actions:\n\n• Choose fresh, organic, and locally sourced food, reducing the need for long-distance (9) __________.\n\n• Avoid excessively packaged goods. (10) ________ buying a pre-packaged meal, consider making your\n\nown. This will decrease the (11) ________ of waste you generate.\n\n• Reuse packaging whenever possible, and sort and recycle paper, plastic, and metal (12) __________.\n\n• At home, switch to energy-saving light bulbs.\n\nCollaborate to save our planet because small actions can make big changes.\n\n(Adapted from binhphuoc.gov.vn/en/news)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (7) trong nội dung phía trên.",
+            "options": {
+              "A": "others",
+              "B": "another",
+              "C": "other",
+              "D": "the others"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (8) trong nội dung phía trên.",
+            "options": {
+              "A": "throw away",
+              "B": "give in",
+              "C": "put off",
+              "D": "take over"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (9) trong nội dung phía trên.",
+            "options": {
+              "A": "storage",
+              "B": "transport",
+              "C": "preservation",
+              "D": "preparation"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (10) trong nội dung phía trên.",
+            "options": {
+              "A": "Instead of",
+              "B": "On account of",
+              "C": "Irrespective of",
+              "D": "In view of"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "number",
+              "B": "level",
+              "C": "amount",
+              "D": "quality"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "substances",
+              "B": "factors",
+              "C": "resources",
+              "D": "items"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 13 to 17."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "a. Mr. Smith: Hello, everyone. It’s nice to meet you all.\nb. Ms Hoa: Good morning, class. I’d like you to meet Mr. Paul Smith. He’s a culture specialist. Today, he’ll\ntalk about cultural diversity in the UK.\nc. Class: Good morning, Mr. Smith. It’s nice to meet you too!.",
+            "options": {
+              "A": "a-b-c",
+              "B": "b-a-c",
+              "C": "b-c-a",
+              "D": "c-b-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "a. Tom: How can we help protect the environment?\nb. Tom: I’ll definitely start recycling more and being more mindful about energy use.\nc. Tom: That sounds good. What about reducing energy use?\nd. Lisa: We should also turn off lights when we’re not using them and use energy-efficient appliances.\ne. Lisa: We can reduce waste by recycling and using less plastic.",
+            "options": {
+              "A": "a-b-c-d-e",
+              "B": "a-e-d-c-b",
+              "C": "a-e-c-d-b",
+              "D": "b-a-c-d-e"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "Dear Emma,\nBecause technology makes it easy to stay connected, I can talk to my family even though we are far apart.\nIf you want to visit me next month, which would make me very happy, we can explore this amazing island together!\nc. I'm writing to you from Bali, where I'm working on my laptop while I enjoy the beautiful beach.\nd. Although I miss home sometimes, I love that I can travel to different countries when I have my computer and internet.\ne. When you asked if I feel lonely, I must say that I meet many friendly people who share the same lifestyle.\nYour friend,",
+            "options": {
+              "A": "a-e-c-d-b",
+              "B": "d-a-e-c-b",
+              "C": "c-d-e-a-b",
+              "D": "e-a-b-d-c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "People who live in cities are happy when vertical farms are near because they can get fresh food quickly.\nWhen farmers use vertical farms, they can grow more food because they need less ground.\nIf more countries build vertical farms, many people will have enough food because we can grow plants anywhere.\nThe plants in vertical farms can grow all year even when it is cold outside because they are inside buildings.\nVertical farms are special buildings where plants grow up instead of out because they use many floors.",
+            "options": {
+              "A": "b-d-a-e-c",
+              "B": "e-b-d-a-c",
+              "C": "d-a-e-b-c",
+              "D": "a-e-b-d-c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "a. Globalization has enabled people from different cultures to interact more easily than ever before.\nb. However, cultural differences can sometimes lead to misunderstandings and conflicts.\nc. To overcome these challenges, individuals should develop cultural awareness and respect for others' traditions.\nd. As a result, societies today are becoming more multicultural and diverse.\ne. By promoting cross-cultural understanding, people can build a more inclusive and harmonious world.",
+            "options": {
+              "A": "a-b-d- e- c",
+              "B": "d-a -b-c-e",
+              "C": "a-d-b-c-e",
+              "D": "a-d-e-b-c"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage carefully and mark the letter A, B, Cor D on your answer sheet to indicate the option that best fits each of the numbered blanks from 18 to 22.\n\nRenewable energy is becoming an essential part of our daily lives as we strive for a cleaner and more sustainable future. Wind and solar power, for instance, (18) ______ , reducing our dependence on non-renewable resources.\n\nOne of the key players in renewable energy development is the International Renewable Energy Agency (IRENA), (19) ______. By utilizing innovative methods, (20) ______, such as solar-powered transportation and wind farms. In many countries, (21) ______. For example, these policies include tax incentives for businesses investing in green technology and subsidies for households installing solar panels.\n\nAs more people recognize the importance of renewable energy, the demand for eco-friendly solutions continues to rise. Consequently, more companies are shifting to sustainable energy sources, (22) ______."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (18) trong nội dung phía trên.",
+            "options": {
+              "A": "are being recognized as useful alternatives to fossil fuels",
+              "B": "recognized as temporary replacements for fossil fuels",
+              "C": "have been costly alternatives to renewable energy",
+              "D": "have been recognized as viable alternatives to fossil fuels"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (19) trong nội dung phía trên.",
+            "options": {
+              "A": "whose purpose is to promote global cooperation and provide policy advice",
+              "B": "who was established to promote global cooperation and provide policy advice",
+              "C": "of which the goal is to support only national energy policies",
+              "D": "whose main challenge is to address environmental issues"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (20) trong nội dung phía trên.",
+            "options": {
+              "A": "scientists and engineers are improving the efficiency of harnessing clean energy.",
+              "B": "Scientists and engineers have struggled to find ways to reduce energy consumption.",
+              "C": "Scientists and engineers have developed traditional techniques to generate fossil fuels.",
+              "D": "We have developed advanced techniques to generate fossil fuels."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (21) trong nội dung phía trên.",
+            "options": {
+              "A": "The government has implemented policies to support fossil fuel expansion",
+              "B": "The government has implemented policies to support the transition to renewable energy",
+              "C": "The government has invented initiatives to restrict the transition to renewable energy",
+              "D": "The government has implemented policies to promote energy efficiency"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (22) trong nội dung phía trên.",
+            "options": {
+              "A": "leading to a significant decrease in carbon emissions.",
+              "B": "leads decreasing carbon emissions significantly.",
+              "C": "so that a significant decrease in carbon emissions is leading.",
+              "D": "which is decreased significantly carbon emissions."
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 23 to 30\n\nIn various cultures around the world, there are lots of customs and taboos, especially those related to physical contact and shoe removal. Understanding those practices is crucial for cultural sensitivity. In many Eastern cultures, such as Japan and South Korea, there is a taboo against physical contact, especially between individuals of the opposite sex or those not closely related. Instead, greetings are typically expressed through respectful bows or nods with a respectful distance. Conversely, in some Latin American and Mediterranean countries, physical contact is more common and often perceived as a natural part of social interaction. Hugs and kisses on the cheek are popular customs of warmth and friendliness when it comes to greetings. However, it's essential to remember that many people within the same culture might have different attitudes towards physical contact.\n\nAnother typical custom observed in various parts of Asia, including Japan, South Korea, and parts of the Middle East, is the removal of shoes before entering someone's home or certain sacred spaces like temples or pagodas. This practice is rooted in the belief that shoes carry dirt from the outside world, and removing them symbolises leaving behind worldly concerns. In contrast, in many Western cultures, it’s customary to keep shoes on when entering someone’s home, unless specifically requested otherwise. However, it’s essential to be aware of individual preferences, as some households may prefer guests to remove their shoes to maintain cleanliness.\n\nIn conclusion, respecting those cultural taboos is essential for promoting cross-cultural interaction. By being mindful of those customs and preferences, people can contribute to a harmonious global community.\n\n(Adapted from English Workbook 12 – iLearn Smart World)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "Which of the following is NOT mentioned as one of the ways to greet someone?",
+            "options": {
+              "A": "a hug",
+              "B": "a bow",
+              "C": "a nod",
+              "D": "a kiss on the lips"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "The word perceived in paragraph 2 can be best replaced by _______.",
+            "options": {
+              "A": "regarded",
+              "B": "imitated",
+              "C": "observed",
+              "D": "supervised"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "The word concerns in paragraph 2 is OPPOSITE in meaning to _______.",
+            "options": {
+              "A": "anxiety",
+              "B": "pride",
+              "C": "depression",
+              "D": "comfort"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "The word their in paragraph 3 refers to _______.",
+            "options": {
+              "A": "preferences",
+              "B": "guests",
+              "C": "shoes",
+              "D": "households"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "Which of the following best paraphrases the underlined part in paragraph 3?",
+            "options": {
+              "A": "In Western countries, you can wear shoes inside the house if allowed.",
+              "B": "Westerners are often asked to leave their shoes outside before entering a home.",
+              "C": "In Western cultures, it’s typical to wear shoes indoors unless asked not to.",
+              "D": "If necessary, one must take off his shoes before entering a Westerner's home."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Physical contact is considered taboo between individuals of the same sex.",
+              "B": "Westerners have no problem with wearing shoes indoors because they are not religious.",
+              "C": "All Asians will certainly ask their guests to take off their shoes when entering the house.",
+              "D": "Not everyone in the same culture has the same opinions on a taboo or a custom."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "In which passage does the author mention a religious belief?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "In which paragraph does the author indicate the implications of some social interactions?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage carefully and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.\n\nOne woman’s trash is another woman’s treasure\n\nThe high living costs after Covid-19, especially in clothing and merchandise, have forced a lot of people to buy second-hand goods to make ends meet. [I] Why would you want to pay for something that has already been used by a stranger? [II] But now, it is a hot new thing that youths and adults are doing. [III] As people become more environmentally conscious, they realise that handing over clothes is a solution to reducing fashion waste and helping the disadvantaged. [IV]\n\nPassing down clothes is not a new thing, and a person can then buy that item for half the price. Mrs. Bảo Trân shared that today’s youth liked to buy expensive clothes to show off in a couple of pictures, then they would sell them back to the store. She had even almost quit buying new clothes because she can just buy almost unused clothes in a store that sells them at a 90% discount or even less. Not only is this practice good for the wallet, but it is also fantastic for the environment. As 92 million tonnes of textile waste is produced every year, the fashion industry is throwing away more clothes than ever before.\n\nBesides taking care of the waste, giving away or buying second-hand clothes also helps the needy who are struggling to survive during cold winters or to afford basic needs. Starting as a Facebook page for selling second-hand clothes, an organisation now sells old clothing for charity money. Volunteers can either donate their used fashion items to the shop to give to the poor or give them to the shop as free apparel. The only requirement is that the clothes should be in good condition. (Adapted from THINK 12)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Where in paragraph I does the following sentence best fit?\n“Years before, buying second-hand goods was seen as unreasonable.”",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "The phrase “handing over” in paragraph 1 could be best replaced by ____.",
+            "options": {
+              "A": "throwing out",
+              "B": "passing through",
+              "C": "putting on",
+              "D": "giving away"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "The word \"they\" in paragraph 2 refers to ____.",
+            "options": {
+              "A": "second-hand stores",
+              "B": "expensive clothes",
+              "C": "today’s youth",
+              "D": "nice pictures"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "According to paragraph 2, which of the following is NOT a reason why young people prefer buying second-hand clothes?",
+            "options": {
+              "A": "They can get almost unused clothes at a much lower price.",
+              "B": "It helps reduce fashion waste and protect the environment.",
+              "C": "They want to show off their costly clothes in their photos.",
+              "D": "It is a way to save money instead of buying brand-new items."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "Which of the following best summarises paragraph 3?",
+            "options": {
+              "A": "Donating or selling second-hand clothes can reduce waste and support people in need.",
+              "B": "Second-hand clothing stores have become a major competitor to fashion retailers.",
+              "C": "People are now required to donate their clothes to charity organisations.",
+              "D": "The fashion industry is benefiting from the popularity of second-hand clothing."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "The word \"afford\" in paragraph 3 is OPPOSITE in meaning to ____.",
+            "options": {
+              "A": "acquire",
+              "B": "deprive",
+              "C": "sustain",
+              "D": "surrender"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "People donate clothes to second-hand stores mainly because they no longer follow current fashion trends.",
+              "B": "The second-hand clothing trend has grown due to rising costs and environmental awareness.",
+              "C": "Buying second-hand clothes provides a cheaper alternative but does not significantly contribute to sustainability efforts.",
+              "D": "Young consumers generally avoid second-hand clothing due to concerns about hygiene and quality."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 3?",
+            "options": {
+              "A": "All donated clothes, regardless of condition, are accepted.",
+              "B": "The shop prefers brand-new clothes but occasionally accepts used ones.",
+              "C": "Clothes donated for charity are preferred to be stylish and decent.",
+              "D": "Donated clothes must be in wearable condition to be accepted."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "Shopping second-hand is a temporary trend that will soon fade away.",
+              "B": "The fashion industry is producing more waste than ever due to fast fashion trends.",
+              "C": "Young people are not interested in second-hand clothes because of hygiene concerns.",
+              "D": "Second-hand clothing stores offer fewer choices than regular fashion retailers."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Which of the following best summarises the passage?",
+            "options": {
+              "A": "Rising costs and environmental concerns drive the shift to second-hand shopping.",
+              "B": "Second-hand stores are increasingly replacing most of the traditional fashion retailers.",
+              "C": "Purchasing second-hand items saves money but fails to deliver environmental benefits.",
+              "D": "Donating used clothes to charity is now mandatory to reduce waste."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "TEST 4",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following advertisement and mark the letter A, B, C or D on your answer sheer to indicate the option that best fits each of the numbered blanks.\n\nCONNECTING THROUGH MUSIC\n\n“Will the concert be (1) ______ or just another event?” Do you often ask yourself this before buying tickets for a show? Well, the new app, (2) ______ 2 years ago, surely enhance your concert experience. It’s called Music Connect, and it connects you with fellow music lovers. When you log in, you can share your favorite songs (3) ______ others attending the same concert. This way, you can find people with (4) ______ and plan to meet up! If you want to discuss genres and discover new artists, look at their profiles. And if you’re more interested in (5) ______ playlists, connect with those who (6) ______ similar musical."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (1) trong nội dung phía trên.",
+            "options": {
+              "A": "excited",
+              "B": "excite",
+              "C": "exciting",
+              "D": "excitement"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (2) trong nội dung phía trên.",
+            "options": {
+              "A": "developed",
+              "B": "was developed",
+              "C": "developing",
+              "D": "which developed"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (3) trong nội dung phía trên.",
+            "options": {
+              "A": "for",
+              "B": "with",
+              "C": "to",
+              "D": "by"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (4) trong nội dung phía trên.",
+            "options": {
+              "A": "music similar tastes",
+              "B": "similar music tastes",
+              "C": "similar tastes music",
+              "D": "music tastes similar"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (5) trong nội dung phía trên.",
+            "options": {
+              "A": "to share",
+              "B": "shares",
+              "C": "sharing",
+              "D": "share"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (6) trong nội dung phía trên.",
+            "options": {
+              "A": "have",
+              "B": "take",
+              "C": "make",
+              "D": "do"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following leaflet and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 7 to 12.\n\nGREEN CLASSROOM COMPETITION\n\nJoin the Green Classroom Competition and help make your classroom more eco-friendly! Work together with your classmates to come up with creative ideas (7) ______ can help the environment. You could start by recycling paper and plastic, or even planting a small garden in your classroom. Try to (8) ______ on waste, like using reusable water bottles (9) ______ of single-use plastic ones.\n\n(10) ______ ideas could include switching off lights when not needed and using both sides of paper for notes. The classroom which shows the most effort and creativity will win a special prize! The competition (11) ______ one month, and judges will visit to see how much you’ve improved.\n\nSo, get involved, share your ideas, and make a positive (12) ______ for the planet. Let’s work together for a greener school!"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (7) trong nội dung phía trên.",
+            "options": {
+              "A": "who",
+              "B": "whom",
+              "C": "which",
+              "D": "when"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (8) trong nội dung phía trên.",
+            "options": {
+              "A": "cut down",
+              "B": "drop out",
+              "C": "carry on",
+              "D": "deal with"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (9) trong nội dung phía trên.",
+            "options": {
+              "A": "because",
+              "B": "in spite",
+              "C": "in case",
+              "D": "instead"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (10) trong nội dung phía trên.",
+            "options": {
+              "A": "Another",
+              "B": "Other",
+              "C": "Others",
+              "D": "The other"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "ends",
+              "B": "lasts",
+              "C": "starts",
+              "D": "begins"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "story",
+              "B": "distance",
+              "C": "decision",
+              "D": "difference"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 13 to 17"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "a. Jamie: Yeah, I saw the flyer! It’s focused on sustainable living, right?\nb. Alex: Hey Jamie, have you heard about the community event this Saturday?\nc. Alex: Exactly! They’re having workshops on recycling and reducing waste.",
+            "options": {
+              "A": "c-a-b",
+              "B": "a-b-c",
+              "C": "a-c-b",
+              "D": "b-a-c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "a. Interviewer: Do you like taking part in Halloween parties?\nb. Minh: I'm helping my classmates create a Halloween haunted house.\nc. Interviewer: The students are preparing for a special event. Hi, Minh, what are you doing?\nd. Interviewer: Wow! You know so much about Halloween.\ne. Minh: Yes, it's great fun! But I'm more interested in its origin. Halloween is believed to\noriginate from an ancient festival in Ireland. It marked the beginning of the Celtic new year.",
+            "options": {
+              "A": "c-b-a-e-d",
+              "B": "c-e-d-b-a",
+              "C": "d-b-a-e-c",
+              "D": "d-e-a-b-c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "Hi Anna,\na. There were so many interesting activities, including music and dance performances.\nb. You should come with me next year; it would be fun!\nc. I had a wonderful time at the festival last weekend.\nd. I took lots of pictures to show you!\ne. I especially enjoyed trying food from different countries.\nWrite back soon,\nTom",
+            "options": {
+              "A": "c-a-d-e-b",
+              "B": "a-c-b-e-d",
+              "C": "b-a-c-e-d",
+              "D": "a-d-b-c-e"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "There are also many music festivals around the globe that bring artists and music fans together.\nPeople nowadays enjoy listening to music from different countries and cultures, and in different languages.\nThanks to globalisation, people can quickly discover new music from all over the world.\nTo sum up, in today's connected world, it is very common for musicians across the world to work on music projects and share ideas together.\nFor example, American teens are captivated by K-pop music and dance.\n(Adapted from Tiếng Anh 12 Global Success)",
+            "options": {
+              "A": "c-a-b-e-d",
+              "B": "d-a-b- e-c",
+              "C": "d-b-c-e-a",
+              "D": "c-b-e-a-d"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "a. First of all, recycling plastic reduces the amount of waste in landfills, which helps to decrease pollution.\nb. In conclusion, recycling plastic is essential for protecting our environment and preserving natural resources for future generations.\nc. Additionally, by reusing plastic materials, we conserve energy that would otherwise be used to produce new plastic products.\nd. Recycling plastic has numerous benefits for the environment.\ne. This not only reduces the demand for raw materials but also lowers greenhouse gas emissions.",
+            "options": {
+              "A": "d – a – e – c – b",
+              "B": "d – a – c – e – b",
+              "C": "a – d – e – c – b",
+              "D": "d – e – a – c – b"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following notes and circle the letter A, B, C, or D to indicate the correct option that best fits each other numbered blanks below.\n\nIn today's fast-paced world, the importance of maintaining a healthy lifestyle cannot be overstated. (18)_________. For instance, those who engage in physical activities regularly often experience increased energy levels and improved mental well-being.\n\nMoreover, research shows that (19)_________. Healthy habits, such as drinking plenty of water and getting enough sleep, contribute significantly to overall wellness.\n\n(20)_________. It is essential to find activities that you genuinely enjoy, as this will make it easier to stay committed. For example, many people find that yoga helps them manage stress while improving their flexibility. (21)_________. (22)_________.\n\nIn conclusion, making small changes to your daily routine can lead to significant improvements in your health and happiness. Embracing a healthy lifestyle is not just a trend; it’s a lifelong commitment to yourself."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (18) trong nội dung phía trên.",
+            "options": {
+              "A": "Many people believe that regular exercise and a balanced diet are the keys to good health",
+              "B": "Many people believes that regular exercise and a balanced diet is the keys to good health",
+              "C": "Many people believe that regular exercise and a balanced diet were the keys to good health",
+              "D": "Many people believe having balanced diets are important for health"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (19) trong nội dung phía trên.",
+            "options": {
+              "A": "individuals who prioritize their health are more likely to enjoy a longer life",
+              "B": "individuals who prioritizes their health are more likely to enjoy a longer life",
+              "C": "individuals who prioritize their health is more likely to enjoy a longer life",
+              "D": "individuals whom prioritize their health are more likely to enjoy a longer life"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (20) trong nội dung phía trên.",
+            "options": {
+              "A": "A healthy lifestyle affects physical health, and it is essential for everyone",
+              "B": "People who exercise can improve their mood, yet they might still feel tired",
+              "C": "Eating well is important, so many individuals ignore it",
+              "D": "A healthy lifestyle not only affects physical health but also enhances emotional resilience"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (21) trong nội dung phía trên.",
+            "options": {
+              "A": "Exercise serves as a social activity, it helps friends to bond and stay fit",
+              "B": "Exercise is a way for friends to bond, because they stay fit together",
+              "C": "Exercise can also serve as a social activity, allowing friends to bond while staying fit",
+              "D": "Exercise can serve social activities, so friends bond while being fit"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (22) trong nội dung phía trên.",
+            "options": {
+              "A": "To combine various forms of physical activity, such as running and cycling, keeps your routine exciting and enjoyable",
+              "B": "Various forms of physical activity, which are combined, keeps your routine exciting and enjoyable",
+              "C": "Combining various forms of physical activities keeps your routine to be exciting and enjoyable",
+              "D": "Combining various forms of physical activity, such as running and cycling, keeps your routine exciting and enjoyable"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about career paths and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 23 to 30.\n\nEngaging in outdoor activities has become increasingly popular in recent years. Not only do these activities provide an escape from the daily grind of life, but they also offer numerous physical and mental health benefits. Hiking, cycling, and team sports are just a few examples of outdoor activities that can enhance well-being.\n\nFirst and foremost, outdoor activities encourage physical fitness. Regular participation in activities like hiking or cycling helps individuals maintain a healthy weight and improve cardiovascular health. The fresh air and natural surroundings can make exercising feel less like a chore and more like an enjoyable experience. Furthermore, studies have shown that spending time in nature can reduce stress levels and promote a sense of tranquility.\n\nIn addition to physical benefits, outdoor activities foster social connections. Participating in team sports or group hikes allows individuals to meet new people and strengthen existing relationships. The shared experience of overcoming challenges together can build camaraderie and enhance teamwork skills.\n\nHowever, some people might argue that outdoor activities are not accessible to everyone. For instance, individuals living in urban areas may find it difficult to access green spaces or safe paths for cycling. This raises the question of equity in accessing outdoor resources.\n\nDespite these challenges, the advantages of engaging in outdoor activities far outweigh the drawbacks. Those who participate regularly often report feeling happier and more fulfilled. The sense of achievement that comes from completing a challenging hike or mastering a new cycling route can significantly boost self-esteem.\n\nIn conclusion, outdoor activities play a crucial role in promoting both physical health and social well-being. By stepping outside and embracing nature, individuals can improve their quality of life. As we continue to navigate the complexities of modern living, it is vital to prioritize these enriching experiences."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "Which of the following is NOT mentioned as a benefit outdoor activity?",
+            "options": {
+              "A": "Improved physical fitness",
+              "B": "Enhanced social connections",
+              "C": "Increased access to technology",
+              "D": "Reduced stress levels"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "The word “accessible” in paragraph 3 is OPPOSITE in meaning to________.",
+            "options": {
+              "A": "Reachable",
+              "B": "Available",
+              "C": "Unavailable",
+              "D": "Approachable"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "The word “these” in paragraph 1 refers to____________.",
+            "options": {
+              "A": "Physical and mental health benefits",
+              "B": "Team sports",
+              "C": "Daily grind of life",
+              "D": "Outdoor activities"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "The word “encourage” in paragraph 2 could be best replaced by_________.",
+            "options": {
+              "A": "Discourage",
+              "B": "Ignore",
+              "C": "Limit",
+              "D": "Promote"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 4?",
+            "options": {
+              "A": "Achieving a challenging hike or cycling route can reduce self-esteem significantly.",
+              "B": "Completing a difficult hike or learning a new cycling route can enhance one's confidence.",
+              "C": "The feeling of accomplishment from a tough hike or a cycling challenge can lower self-worth.",
+              "D": "Mastering a new cycling route and finishing a hike is not important for self-esteem."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Engaging in outdoor activities can lead to improved mental health.",
+              "B": "Outdoor activities are only beneficial for physical fitness.",
+              "C": "All individuals have equal access to outdoor activities.",
+              "D": "Spending time indoors is more beneficial than outdoor activities."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "In which paragraph does the writer mention a drawback when people participate in outdoor activity?",
+            "options": {
+              "A": "Paragraph 3",
+              "B": "Paragraph 1",
+              "C": "Paragraph 4",
+              "D": "Paragraph 2"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "In which paragraph does the writer mention the benefits of outdoor activity for physical health?",
+            "options": {
+              "A": "Paragraph 4",
+              "B": "Paragraph 1",
+              "C": "Paragraph 3",
+              "D": "Paragraph 2"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about the urban shift and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.\n\n[I] In today's globalized world, cultural diversity has become a fundamental aspect of many societies. [II] Many countries are experiencing increasing levels of migration. [III] With the rise of immigration and the blending of traditions, people from various cultural backgrounds are now living side by side in cities across the globe. [IV]\n\nOne of the key advantages of cultural diversity is the richness it adds to a society. Different cultures introduce unique perspectives, foods, languages, and traditions, which help people broaden their understanding of the world. In schools and workplaces, cultural diversity fosters creativity and innovation, as individuals from different backgrounds approach problems in novel ways. However, there are also challenges associated with living in culturally diverse communities. Misunderstandings and communication barriers can arise when people are unfamiliar with each other's customs and values. To address these issues, societies must encourage cultural sensitivity and create opportunities for cross-cultural exchange.\n\nGovernments and institutions around the world are beginning to implement policies that promote inclusion and respect for cultural differences. By celebrating diversity through events, education, and media representation, communities can create environments where people feel valued regardless of their background. Ultimately, embracing cultural diversity helps to build more peaceful and harmonious societies."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Where in paragraph 1 does the following sentence best fit?\nThis increasing diversity brings about both challenges and opportunities.",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "The word “novel” in paragraph 2 could best be replaced by _______.",
+            "options": {
+              "A": "customary",
+              "B": "common",
+              "C": "original",
+              "D": "flexible"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "The word “it” in paragraph 2 refers to _______.",
+            "options": {
+              "A": "society",
+              "B": "richness",
+              "C": "cultural diversity",
+              "D": "opportunity"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "According to paragraph 2, which of the following is NOT an advantage of cultural diversity?",
+            "options": {
+              "A": "Promoting innovation",
+              "B": "Enhancing creativity",
+              "C": "Preventing misunderstandings",
+              "D": "Expanding perspectives"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "Which of the following best summarizes paragraph 3?",
+            "options": {
+              "A": "Governments are taking steps to ensure that cultural diversity is celebrated and respected.",
+              "B": "Policies that promote inclusion are reducing the challenges caused by cultural diversity.",
+              "C": "Celebrating cultural diversity creates more harmonious and peaceful societies.",
+              "D": "Promoting cross-cultural exchange helps societies overcome the challenges of diversity."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "The word “harmonious” in paragraph 3 is OPPOSITE in meaning to _______.",
+            "options": {
+              "A": "adaptable",
+              "B": "hostile",
+              "C": "friendly",
+              "D": "freezing"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Cultural diversity mainly benefits societies by creating job opportunities.",
+              "B": "Misunderstandings in diverse communities arise due to unfamiliar customs.",
+              "C": "Governments have not yet addressed the challenges posed by cultural diversity.",
+              "D": "Cross-cultural exchange programs are unnecessary for promoting inclusion."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 3?",
+            "options": {
+              "A": "Celebrating diversity alone cannot solve the issues in culturally diverse communities.",
+              "B": "Understanding cultural diversity fully is necessary for harmonious societies.",
+              "C": "Misunderstandings will persist without education about different cultures.",
+              "D": "Communities can create inclusive environments by encouraging cultural events and education."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "Cultural diversity can be both an asset and a challenge for communities.",
+              "B": "Governments are failing to address the complexities of cultural diversity.",
+              "C": "Cultural sensitivity programs are ineffective in reducing communication barriers.",
+              "D": "Increased immigration automatically leads to social harmony."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Which of the following best summarizes the passage?",
+            "options": {
+              "A": "Embracing cultural diversity is easy for societies that celebrate traditions and language differences without the need for cross-cultural exchange.",
+              "B": "Immigration has led to challenges for societies that can only be solved by eliminating cultural differences.",
+              "C": "Cultural diversity enriches societies by promoting new perspectives and innovation, but it also requires efforts to overcome misunderstandings and communication barriers.",
+              "D": "Governments should focus on reducing immigration to prevent the problems associated with cultural diversity."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "TEST 5",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following advertisement and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 6\n\nDISCOVER THE WORLD WITH OUR EXCHANGE PROGRAMME\n\nHave you dreamed of studying in a new country? Wondered what it would be like to live somewhere (1) ______? These are questions that many students ask themselves before (2) ______ university. But now, you have the chance to experience life abroad! Recently, our university has introduced a new programme (3) ______ \"Global Exchange,\" where you can study at one of our partner universities worldwide. By joining it, you can share your culture, (4) ______ international friends and study in a(n) (5) ______ .\n\nYou will also see how students from different countries study and live. If you're interested in learning new skills or exploring new places, this programme could be perfect (6) ______ you. Apply now and start your adventure!"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (1) trong nội dung phía trên.",
+            "options": {
+              "A": "differently",
+              "B": "differentiate",
+              "C": "difference",
+              "D": "different"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (2) trong nội dung phía trên.",
+            "options": {
+              "A": "to start",
+              "B": "started",
+              "C": "starting",
+              "D": "start"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (3) trong nội dung phía trên.",
+            "options": {
+              "A": "call",
+              "B": "is called",
+              "C": "calling",
+              "D": "called"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (4) trong nội dung phía trên.",
+            "options": {
+              "A": "get",
+              "B": "make",
+              "C": "bring",
+              "D": "give"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (5) trong nội dung phía trên.",
+            "options": {
+              "A": "learning unique environment",
+              "B": "unique environment learning",
+              "C": "environment learning unique",
+              "D": "unique learning environment"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (6) trong nội dung phía trên.",
+            "options": {
+              "A": "of",
+              "B": "for",
+              "C": "with",
+              "D": "to"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following leaflet and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 7 to 12.\n\nCREATIVE WAYS TO PROMOTE CULTURAL HERITAGE IN YOUR COMMUNITY\n\nCultural heritage is essential for preserving the diverse traditions of humanity and bringing communities closer together. However, many communities (7) ______challenges in keeping their cultural heritage alive. (8) ______modernization and globalization, many traditional cultures are fading away. So, how can you promote cultural heritage in your community? Here are (9) ______creative ways to do just that:\n\n• Organize Cultural Events: Host festivals or fairs that celebrate heritage, giving people the chance to learn about and enjoy various cultural traditions.\n\n• (10) ______Heritage Trails: Create walking tours that highlight historical sites in your area, helping people learn about specific cultural landmarks.\n\n• Showcase Local Art: Display local art through exhibitions, giving artists an opportunity to share their works and (11) ______pride in their culture.\n\n• Share Fascinating Cultural Stories: Share the unique stories of your community, helping (12) ______ people learn more about its rich cultural background."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (7) trong nội dung phía trên.",
+            "options": {
+              "A": "face",
+              "B": "address",
+              "C": "tackle",
+              "D": "overcome"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (8) trong nội dung phía trên.",
+            "options": {
+              "A": "Regardless of",
+              "B": "Thanks to",
+              "C": "Irrespective of",
+              "D": "Due to"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (9) trong nội dung phía trên.",
+            "options": {
+              "A": "a little",
+              "B": "few",
+              "C": "a few",
+              "D": "little"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (10) trong nội dung phía trên.",
+            "options": {
+              "A": "Put off",
+              "B": "Set up",
+              "C": "Give in",
+              "D": "Pass out"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "lose",
+              "B": "boast",
+              "C": "hurt",
+              "D": "inspire"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "the others",
+              "B": "another",
+              "C": "other",
+              "D": "others"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 13 to 17."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "Dear Minh,\na. These activities not only make our school a better place but also help us become more responsible for protecting the environment.\nb. Hope you're doing well! In your last letter, you asked me about what our school does to protect the environment.\nc. We also encourage everyone to save energy by turning off lights and fans when they’re not needed.\nd. Besides, we often organize environmental campaigns where students make posters and give presentations about eco-friendly habits.\ne. Well, we have a lot of activities to keep our school green and clean. For example, we plant trees and have a composting system to reduce waste.\nBest,\nTuan",
+            "options": {
+              "A": "a–d–b–c–e",
+              "B": "c–a–d–b–e",
+              "C": "d–b–a–c–e",
+              "D": "b–e–c–d–a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "a. Furthermore, prolonged bullying can negatively impact a person's future success, leading to difficulties in education, career, and social interactions.\nb. Schools, parents, and communities must work together to prevent bullying by promoting awareness and implementing strict policies.\nc. Bullying is a serious issue that negatively affects individuals’ mental health, self-esteem, and academic performance.\nd. Victims of bullying often experience anxiety, depression, and social isolation, which can have long-term consequences.\ne. Addressing bullying effectively not only protects individuals but also helps create a safer and more inclusive environment.",
+            "options": {
+              "A": "c–a–d–b–e",
+              "B": "c–d–a–b–e",
+              "C": "c–b–a–e–d",
+              "D": "c–a–b–e–d"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "a. Michelle: What are you hungry for?\nb. Michelle: Ah, here comes the shuttle bus. Come on, let's move.\nc. Michelle: The show is tomorrow. But today we need to check our booth and make sure all our products are in good condition.\nd. Dan: A hot dog, the works, would be great.\ne. Dan: Yes, Ma'am. Let's go. Maybe we can grab a bite on the way to the fair. I'm hungry.",
+            "options": {
+              "A": "c–e–a–d–b",
+              "B": "c–d –a–e –b",
+              "C": "a–d–b–e–c",
+              "D": "b–d–a–e–c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "a. Additionally, maintain eye contact and nod occasionally to show that you are engaged in the conversation.\nb. Good communication etiquette is essential for building strong relationships and showing respect to others.\nc. If you need to interrupt, do so politely by saying, \"Excuse me,\" and wait for the right moment to speak.\nd. It is important to listen actively and avoid interrupting while someone else is speaking.\ne. Lastly, be mindful of your tone and volume to ensure that your message is received positively.",
+            "options": {
+              "A": "a–b–c–d–e",
+              "B": "a–d–c–b–e",
+              "C": "b–d–c–a–e",
+              "D": "b–c–a–d–e"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "a. John: Hey, Sarah! Thanks a lot. You look fantastic too! Have you traveled recently?\nb. Sarah: Hey, John! It's been forever! You look awesome!\nc. Sarah: Yes, I’ve just come back from Japan. It was such an amazing trip!",
+            "options": {
+              "A": "a–c–b",
+              "B": "c–a–b",
+              "C": "a–b–c",
+              "D": "b–a–c"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 18 to 22.\n\nArtificial Intelligence (AI) has the potential to address some of the biggest challenges in education today, innovate teaching and learning practices, and accelerate progress towards SDG 4. However, rapid technological developments inevitably bring multiple risks and challenges, (18) ______. UNESCO is committed to supporting Member States to harness the potential of AI technologies for achieving the Education 2030 Agenda. (19) ______.\n\nUNESCO's mandate calls for a human-centered approach to AI, focusing on AI's role in reducing gaps in access to knowledge, research, and cultural diversity, while ensuring AI doesn't increase the technological divide within and between countries. (20) ______. Within the framework of the Beijing Consensus, Guidance for Policy-makers was designed to help governments prepare for the use of AI in education. AI competency frameworks (21) ______. These frameworks serve as essential tools for preparing future generations with the digital literacy and ethical awareness needed in an AI-driven world. UNESCO’s vision of “AI for all” is rooted in global collaboration and inclusive innovation. (22) ______."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (18) trong nội dung phía trên.",
+            "options": {
+              "A": "of which policy makers, regulations, as well as industry leaders and experts",
+              "B": "which policy makers and regulations are struggling to address",
+              "C": "that policy makers and regulations are struggling to successfully address them",
+              "D": "policy makers and regulations are struggling to address effectively"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (19) trong nội dung phía trên.",
+            "options": {
+              "A": "Besides, the organisation emphasizes the importance of AI's role in promoting customer service experiences and user satisfaction",
+              "B": "Meanwhile, the organisation focuses on integrating AI to create personalized learning platforms aimed at maximizing student engagement",
+              "C": "In addition, the organisation advocates for AI applications in urban planning, infrastructure development and smart city initiatives",
+              "D": "At the same time, the organisation ensures that AI application in educational contexts is guided by the core principles of inclusion and equity"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (20) trong nội dung phía trên.",
+            "options": {
+              "A": "Its aim is to prevent AI from reinforcing global inequities",
+              "B": "The conversation mostly ignores cultural diversity",
+              "C": "It also ensures that AI supports only economic goals",
+              "D": "It leads UNESCO to focus on AI hardware production"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (21) trong nội dung phía trên.",
+            "options": {
+              "A": "were also published by UNESCO to guide countries in supporting students and teachers to understand the potential as well as risks of AI",
+              "B": "of which the purpose is to guide countries in supporting students and teachers to understand the potential as well as risks of AI",
+              "C": "that also published by UNESCO to guide countries in supporting students and teachers to understand the potential as well as risks of AI",
+              "D": "whose purpose is to guide countries in supporting students and teachers to understand the potential as well as risks of AI"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (22) trong nội dung phía trên.",
+            "options": {
+              "A": "The vision promotes advanced research and scientific progress over inclusive learning",
+              "B": "It prioritizes commercial use of AI tools in educational institutions across developing nations",
+              "C": "It excludes small disadvantaged nations that lack AI infrastructure and well-equipped facilities",
+              "D": "This vision ensures equal and meaningful access to the benefits of AI for everyone"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about endangered languages and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 23 to 30.\n\nEndangered Species\n\nThe world is home to millions of species, but many are at risk of disappearing. Scientists estimate that over 40% of the planet’s species are threatened, with some, like the Javan rhinoceros, having fewer than 80 individuals left in the wild. Between 1970 and 2020, over 500 species, including the passenger pigeon and the western black rhinoceros, were declared extinct. Habitat loss, climate change, and poaching are major causes of this decline.\n\nWhen a species goes extinct, we lose more than just an animal or plant. Each species plays a unique role in its ecosystem. For example, the sea otter, found along the Pacific coast, is vital to kelp forests. Sea otters eat sea urchins, which, if left unchecked, can destroy kelp. The term “keystone species” is used to describe creatures like the sea otter because their presence supports the balance of their environment. Losing them can cause ecosystems to collapse.\n\nEfforts are underway to protect endangered species. In India, conservation programs have increased the population of the Bengal tiger from 1,400 in 2006 to over 3,000 today. Local communities are involved in these efforts, learning to coexist with tigers to reduce human-wildlife conflict. Similarly, in Australia, the government has set a goal to prevent any further extinctions of native species by 2030.\n\nTechnology is also aiding conservation. The International Union for Conservation of Nature (IUCN) has developed a digital Red List, an online database that tracks the status of species worldwide. This tool allows scientists, governments, and the public to access up-to-date information about threatened species, helping them make informed decisions to protect biodiversity."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "Which of the following is NOT mentioned as a cause of species decline?",
+            "options": {
+              "A": "Habitat loss",
+              "B": "Climate change",
+              "C": "Poaching",
+              "D": "Overpopulation"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "The word extinct in paragraph 1 is OPPOSITE in meaning to _______.",
+            "options": {
+              "A": "surviving",
+              "B": "endangered",
+              "C": "native",
+              "D": "ancient"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "The word their in paragraph 2 refers to _______.",
+            "options": {
+              "A": "sea urchins",
+              "B": "sea otters",
+              "C": "kelp forests",
+              "D": "ecosystems"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "The word access in paragraph 4 could be best replaced by _______.",
+            "options": {
+              "A": "obtain",
+              "B": "create",
+              "C": "observe",
+              "D": "share"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 4?",
+            "options": {
+              "A": "Only technology can help conserve endangered species.",
+              "B": "Technology is the only solution to prevent species extinction.",
+              "C": "Technology provides a useful tool for conserving endangered species.",
+              "D": "Technology should be the last option for conserving endangered species."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "The Bengal tiger population has more than doubled since 2006.",
+              "B": "The IUCN’s Red List is the only way to save endangered species.",
+              "C": "Over 1,000 species went extinct between 1970 and 2020.",
+              "D": "Australia’s goal is to double its native species by 2030."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "In which paragraph does the writer mention a present causal relationship?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "In which paragraph does the writer explore modern methods for protecting endangered species?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.\n\nThe custom of paying a bride price before marriage remains a deeply rooted tradition in many African cultures. [I] The groom’s family must provide payment to the bride’s family before the marriage is permitted. [II]The form of payment varies across regions—Zulu and Swazi tribes in southern Africa often use cattle, while kola nuts, blankets, shells, and other goods are common in West Africa. [III] The amount paid also varies, with some modern bride prices being largely symbolic, while others remain significant, especially among traditional or high-status families. [IV]\n\nSeveral reasons justify the payment of bride price. It compensates the bride’s family for the cost of raising her and acknowledges their loss as she officially joins her husband’s family. On a deeper level, the bride price is also a recognition of the children the bride will bring into her husband’s family, increasing its wealth. This idea is reinforced by the common practice of refunding the bride price if the marriage does not result in children.\n\nThe bride price influences African society in various ways. It strengthens family bonds, as sons rely on their fathers and elders for financial support, fostering respect and obedience. Negotiations over the bride price encourage families to interact and build relationships before the marriage. Additionally, because the bride price is often repaid in cases of divorce, the bride’s family has a vested interest in ensuring marital stability. Furthermore, the practice redistributes wealth within African communities, as wealthier families support the marriages of their sons, transferring resources to others.\n\nHowever, the system also has drawbacks. One significant issue is the age disparity between husbands and wives. Since young men often lack the financial means to afford a bride price, women frequently marry older men. This results in many young women marrying before the age of 18, cutting short their education. Additionally, a large age gap can mean that a husband passes away while his wife is still relatively young, leaving her to raise their children alone. While bride price remains an important cultural tradition, it has lost its popularity in recent years."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Where in paragraph 1 does the following sentence best fit?\nAlthough money is sometimes exchanged, goods are more frequently used.",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "The word symbolic in paragraph 1 could be replaced by _______.",
+            "options": {
+              "A": "representative",
+              "B": "worthless",
+              "C": "expensive",
+              "D": "complicated"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "According to paragraph 2, which of the following is NOT a reason for paying bride price?",
+            "options": {
+              "A": "Compensation for raising the bride",
+              "B": "A guarantee of marital happiness",
+              "C": "Payment for the bride’s family’s loss",
+              "D": "Recognition of future children"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 2?",
+            "options": {
+              "A": "The bride price is often returned to the groom’s family when a couple separates for any reason.",
+              "B": "The belief is strengthened by the fact that the bride price is returned if the couple has no children.",
+              "C": "The groom’s family demands a refund of the bride price if the bride fails to fulfill household duties.",
+              "D": "The tradition of paying a bride price is disappearing due to modern changes in marriage customs."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "The word their in paragraph 3 refers to _______.",
+            "options": {
+              "A": "weathier families",
+              "B": "African communities",
+              "C": "fathers",
+              "D": "bride’s families"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "Which of the following best summarises paragraph 3?",
+            "options": {
+              "A": "Wealthy families often avoid paying high bride prices due to their status.",
+              "B": "Paying the bride price can be a significant burden on African families.",
+              "C": "The bride’s family typically benefits the most from the bride price payment.",
+              "D": "Bride price promotes family bonds, social stability, and wealth distribution."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "The word disparity in paragraph 4 is OPPOSITE in meaning to _______.",
+            "options": {
+              "A": "equality",
+              "B": "difference",
+              "C": "distance",
+              "D": "imbalance"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Which of the following is NOT TRUE according to the passage?",
+            "options": {
+              "A": "Some bride prices are purely symbolic in modern times.",
+              "B": "The bride price is refunded if the bride does not bear children.",
+              "C": "The groom’s family receives payment from the bride’s family.",
+              "D": "Wealthier families can afford higher bride prices."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "The bride price tradition may decline in the future.",
+              "B": "Bride price ensures that all marriages are successful.",
+              "C": "Most women in Africa prefTer to marry rich older men.",
+              "D": "Education for women is not affected by bride price."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Which of the following best summarises the passage?",
+            "options": {
+              "A": "The bride’s family often receives financial benefits from the bride price tradition.",
+              "B": "Bride price is a long-standing African tradition with both benefits and challenges.",
+              "C": "Bride price is an outdated tradition and therefore should be abolished immediately.",
+              "D": "Bride price contributes to promoting gender equality within marital relationships."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TEST 6",
+      "items": [
+        {
+          "type": "passage",
+          "data": "Read the following passage and mark the letter A, B, C and D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 6.\n\nJapan’s Cherry Blossom Festival, Hanami, is a traditional celebration (1) ______ during spring. It involves the viewing of cherry blossoms, known as sakura, which bloom at different times across Japan. The festival typically starts in late March and continues (2) ______ approximately 2 weeks. Celebrations include outdoor parties, picnics, and events in public parks, rivers, and other locations where cherry trees are (3) ______. The festival dates back to the Nara period (710-794 A.D.), indicating its (4) ______ in Japan. The cherry blossoms symbolize the arrival of spring and the transient beauty of nature. The short blooming period of the sakura is a reminder of life’s fleeting (5) ______. This festival is not just about viewing flowers, but it’s a time for people (6) ______ together and appreciate the simple, yet transient beauty of life."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 1,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (1) trong nội dung phía trên.",
+            "options": {
+              "A": "held",
+              "B": "which held",
+              "C": "holding",
+              "D": "is held"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 2,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (2) trong nội dung phía trên.",
+            "options": {
+              "A": "in",
+              "B": "for",
+              "C": "with",
+              "D": "by"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 3,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (3) trong nội dung phía trên.",
+            "options": {
+              "A": "sent",
+              "B": "grown",
+              "C": "found",
+              "D": "given"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 4,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (4) trong nội dung phía trên.",
+            "options": {
+              "A": "significance deep cultural",
+              "B": "cultural deep significance",
+              "C": "cultural significance deep",
+              "D": "deep cultural significance"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 5,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (5) trong nội dung phía trên.",
+            "options": {
+              "A": "beauty",
+              "B": "beautiful",
+              "C": "beautifully",
+              "D": "beautify"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 6,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (6) trong nội dung phía trên.",
+            "options": {
+              "A": "to coming",
+              "B": "coming",
+              "C": "come",
+              "D": "to come"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following announcement and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 7 to 12.\n\nACTIVITY BREAKS AT BROOKE'S LEISURE CENTRE\n\nIf you are looking for a fun and rewarding job to do over the summer holidays, then we have just the answer! Brook's Leisure Centre is excited (7)_______ that we are running activity weeks for groups of 11-13 year-olds. We need reliable and inspiring organizers who can ensure that all activities run smoothly and that the children (8)______ here will have a great time.\n\nAre you interested in and skilled (9)_______ a wide range of sports? Do you (10)_______experience in managing children? Do you have (11)________ during the week? If you answered \"yes\" to these questions, we want to hear from you! Please write to us, providing details of your experience, skills, and (12)_________ for an interview. Please also give the name of a referee.\n\nSend your letter to: The Director, Brooke's Leisure Centre, Hill Park, Bournemouth."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 7,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (7) trong nội dung phía trên.",
+            "options": {
+              "A": "announced",
+              "B": "to announce",
+              "C": "announcing",
+              "D": "announce"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 8,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (8) trong nội dung phía trên.",
+            "options": {
+              "A": "to come",
+              "B": "coming",
+              "C": "who came",
+              "D": "come"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 9,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (9) trong nội dung phía trên.",
+            "options": {
+              "A": "of",
+              "B": "at",
+              "C": "about",
+              "D": "for"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 10,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (10) trong nội dung phía trên.",
+            "options": {
+              "A": "do",
+              "B": "make",
+              "C": "have",
+              "D": "get"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 11,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (11) trong nội dung phía trên.",
+            "options": {
+              "A": "working flexible hours",
+              "B": "hours working flexible",
+              "C": "flexible hours working",
+              "D": "flexible working hours"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 12,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (12) trong nội dung phía trên.",
+            "options": {
+              "A": "availably",
+              "B": "availability",
+              "C": "available",
+              "D": "unavailable"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 13 to 17."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 13,
+            "stem": "a. Jason: That’s awesome! I wish I could have gone with you.\nb. Jason: Hi, Emma! Did you enjoy the concert last night?\nc. Emma: Hey, Jason! It was incredible! The band played all my favorite songs.",
+            "options": {
+              "A": "a-c-b",
+              "B": "b-a-c",
+              "C": "b-c-a",
+              "D": "c-b-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 14,
+            "stem": "a. Mike: I went to India for two weeks.\nb. Sue: No. What happened?\nc. Mike: I felt as if I was a fish out of water.\nd. Mike: Hey, have I ever told you about the time I traveled alone?\ne. Sue: How did you feel?",
+            "options": {
+              "A": "c-b-a-e-d",
+              "B": "c-e-d-b-a",
+              "C": "d-b-a-e-c",
+              "D": "d-e-a-b-c"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 15,
+            "stem": "Hi Karen,\na. I feel much more confident about it now.\nb. Let’s grab coffee soon so I can catch you up on everything!\nc. I really appreciate your support.\nd. I wanted to say thanks for your help with my project last week.\ne. Your insights made a huge difference in my presentation.\nBest,\nNina",
+            "options": {
+              "A": "d-e-a-c-b.",
+              "B": "a-d-b-c-e",
+              "C": "d-c-a-b-e",
+              "D": "a-c-b-d-e"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 16,
+            "stem": "a. On the other hand,Vietnamese specialities , such as pho and banh mi , are also gaining popularity worldwide\nb. Moreover , some international dishes use local ingredients ,which make them unique and more suitable to local tastes\nc. For example ,here in Viet Nam , we can enjoy Italian pizza or Japanese sushi , in addition to our traditional food\nd. It offers a wide range of dishes a wide range of dishes and more food choices to local people\ne. Fast food chains and international restaurants have become popuar\n( adopted from global success)",
+            "options": {
+              "A": "e-d-c-b-a",
+              "B": "b-a-c-d-e",
+              "C": "e-d-b-a-c",
+              "D": "c-d-e-b-a"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 17,
+            "stem": "a. In today’s connected world, it is very common for musicians across the world to work on music projects and share ideas together\nb. There are also many music festivals around the globe that brings artists and music fans together\nc. For examples , American teens are captivated by K-pop music and dance\nd. People nowadays enjoy listening to music from different countries and cultures , and in different languages\ne. Thanks to globalisation , people can quickly discover new music from all over the world",
+            "options": {
+              "A": "e-d-c-b-a",
+              "B": "d-c-b-a-e",
+              "C": "a-b-c-d-e",
+              "D": "b-c-d-e-a"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about humanoid robots and mark the letter A, B, C or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 18 to 22.\n\nGlobalization has connected the world, impacting people's way of life, beliefs, art, and customs. While experiences are more similar, cultural diversity is also promoted.\n\nFast food chains and international restaurants have become popular, offering a wide range of dishes and more food choices to local people. ___(18)___. Moreover, some international dishes use local ingredients, which make them unique and more suitable to local tastes. On the other hand, Vietnamese specialties, such as pho and banh mi, ___(19)___.\n\nThanks to globalization, people can quickly discover new music from all over the world. ___(20)___. For example, American teens are captivated by K-pop music and dance. There are also many music festivals around the globe ___(21)___. In today's connected world, it is very common for musicians across the world to work on music projects and share ideas together.\n\nGlobalization has also influenced fashion, allowing for a mix of traditional and modern styles from various cultures. This trend provides designers with opportunities to creatively highlight cultural diversity. People can now easily follow trends from different regions, expressing their identities in unique ways.\n\nIn conclusion, globalization has helped strengthen cultural diversity in the world and ___(22)___.\n\n(Adapted from Global Success)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 18,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (18) trong nội dung phía trên.",
+            "options": {
+              "A": "For example, here in Viet Nam, we can enjoy Italian pizza or Japanese sushi, in addition to our traditional food",
+              "B": "For example, in many places in Viet Nam, numerous festivals have been organized to attract foreign visitors",
+              "C": "As a result, many Vietnamese cooks have become internationally famous master chefs, bringing pride to the nation",
+              "D": "Consequently, many Vietnamese traditional dishes have become popular with tourists around the world."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 19,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (19) trong nội dung phía trên.",
+            "options": {
+              "A": "to be getting reputation all over the world",
+              "B": "being internationally popular",
+              "C": "are also gaining popularity worldwide",
+              "D": "also gaining popularity globally"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 20,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (20) trong nội dung phía trên.",
+            "options": {
+              "A": "People nowadays enjoy listening to music from different countries and cultures, and in different languages",
+              "B": "People nowadays enjoy listening to different kinds of their traditional music throughout the country.",
+              "C": "Artists all around the world can find it difficult to reach their target audience from alien cultures.",
+              "D": "Global citizens could make changes to the patterns of other countries’ tradition types of music."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 21,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (21) trong nội dung phía trên.",
+            "options": {
+              "A": "brought artists and music fans together",
+              "B": "that bring artists and music fans together",
+              "C": "both music artists and fans are gathered",
+              "D": "artists and music fans gather together"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 22,
+            "stem": "Chọn đáp án phù hợp với chỗ trống (22) trong nội dung phía trên.",
+            "options": {
+              "A": "alien cultures and lifestyles making people to underestimate",
+              "B": "making people to underestimate alien cultures and lifestyles",
+              "C": "different cultures and lifestyles made people to appreciate",
+              "D": "made people appreciate different cultures and lifestyles"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about plastic and the environment and mark the letter A, B, C or D on your answer sheet to indicate the best answer to each of the following questions from 23 to 30.\n\nPLASTIC AND THE ENVIRONMENT\n\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth's supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the environment. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used\n\nagain to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic\n\nones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops."
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 23,
+            "stem": "According to the passage, things made from plastic are bad for our environment because _____.",
+            "options": {
+              "A": "they are very convenient for people to use in different purposes.",
+              "B": "people reuse plastic objects before recycling them.",
+              "C": "they are a danger to marine life such as whales, turtles and so on.",
+              "D": "plastics can exist for a long time without decomposing."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 24,
+            "stem": "What is the passage mainly about?",
+            "options": {
+              "A": "Plastic: effects and solutions to the problem.",
+              "B": "Materials that plastic is made of.",
+              "C": "The ways to reduce the harm of plastics on the environment.",
+              "D": "The history of plastic and its usefulness."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 25,
+            "stem": "According to the passage, which of the following is NOT mentioned as a way to protect the environment?",
+            "options": {
+              "A": "using canvas bags for shopping instead of plastic ones",
+              "B": "reusing plastic things",
+              "C": "buying more plastic things",
+              "D": "recycling plastic things"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 26,
+            "stem": "The word \"They\" in paragraph 2 refers to ______.",
+            "options": {
+              "A": "Things",
+              "B": "Plastics",
+              "C": "Rubbish dumps",
+              "D": "People"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 27,
+            "stem": "The phrase \"get rid of\" in paragraph 2 is closest in meaning to ______.",
+            "options": {
+              "A": "remove",
+              "B": "make",
+              "C": "create",
+              "D": "keep"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 28,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 2?",
+            "options": {
+              "A": "Plastic things are useful for both people and the environment.",
+              "B": "Sometimes, plastic wastes are harmful to the environment",
+              "C": "Things made from plastic can be used by people.",
+              "D": "Plastic products are beneficial to people but can harm the environment."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 29,
+            "stem": "In which paragraph does the writer mention the materials used to make plastics?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 30,
+            "stem": "In which passage does the author mention that plastics can harm the environment?",
+            "options": {
+              "A": "Paragraph 1",
+              "B": "Paragraph 2",
+              "C": "Paragraph 3",
+              "D": "Paragraph 4"
+            }
+          }
+        },
+        {
+          "type": "passage",
+          "data": "Read the following passage about wildlife conservation and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.\n\nThe Rapid Growth of Cities Around the World\n\n[I] Urbanization is growing very quickly in developing countries, particularly in Africa, Asia, and Latin America, where millions of people are leaving rural areas to settle in cities. [II] Many of these people move because they hope to find better-paying jobs in factories, offices, or construction, which are often more available in urban areas. [III] Others come to cities for better education opportunities, like schools and universities, which can help their children have a brighter future. Access to healthcare is another big reason - cities usually have more hospitals and doctors than villages, making it easier for families to stay healthy. [IV]\n\nCities offer many opportunities. For example, in India, cities like Mumbai and Delhi have grown because “they” provide work in factories, offices, and technology companies. People also enjoy better schools, hospitals, and transportation, like buses and trains. However, this rapid growth creates big challenges. Many cities become overcrowded, and there aren’t enough houses for everyone. This leads to slums - poor areas with no clean water, electricity, or good roads. Traffic jams and pollution also get worse as more cars and factories fill the air with smoke and noise.\n\nAnother problem is how cities “expand” into rural areas. When cities grow, they often take over farmland, leaving less space for farming. This can make food more expensive and harder to find. For instance, in Nairobi, Kenya, urban areas have spread quickly, but not all neighborhoods have enough services like clean water or waste management. Some areas also face flooding because of poor planning and too much concrete, which stops rainwater from soaking into the ground.\n\nExperts say “urban planning” is key to solving these problems. Governments need to build more affordable housing, improve roads, and create green spaces like parks. Using clean energy, such as solar power, can reduce pollution. In some cities, like Seoul, South Korea, officials have used land-use plans to manage growth carefully, balancing new buildings with nature. Community groups also play a role by mapping needs and working with leaders to provide better services.\n\nUrbanization won’t stop, but it can be managed better. Cities should grow in a way that’s sustainable - meaning they’re good for people and the environment. If leaders plan well, urbanization can bring progress without harming the planet or leaving people behind. It’s a big challenge, but with the right actions, cities can become better places for everyone.\n\n(Adapted from \"Urban Expansion in the Global South: Challenges and Solutions,)"
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 31,
+            "stem": "Where in paragraph 1 does the following sentence best fit?\nThis rapid movement is creating both exciting possibilities and big challenges for these growing urban regions, as they try to support so many new residents.",
+            "options": {
+              "A": "[I]",
+              "B": "[II]",
+              "C": "[III]",
+              "D": "[IV]"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 32,
+            "stem": "The word \"they\" in paragraph 2 refers to _______.",
+            "options": {
+              "A": "people",
+              "B": "opportunities",
+              "C": "cities",
+              "D": "hospitals"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 33,
+            "stem": "According to paragraph 3, which of the following is NOT a problem caused by urban expansion?",
+            "options": {
+              "A": "Loss of farmland",
+              "B": "Increased food prices",
+              "C": "More job opportunities",
+              "D": "Flooding due to poor planning"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 34,
+            "stem": "Which of the following best summarizes paragraph 2?",
+            "options": {
+              "A": "Cities provide many benefits, but rapid growth leads to problems like slums and pollution.",
+              "B": "Rural areas are disappearing as cities expand quickly, but causing no problems to humans.",
+              "C": "Traffic jams and pollution are the only problems caused by urbanization in developed countries.",
+              "D": "Cities in developed countries do not experience urbanization issues, except environmental pollution."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 35,
+            "stem": "The word \"expand\" in paragraph 3 is OPPOSITE in meaning to _______.",
+            "options": {
+              "A": "grow",
+              "B": "shrink",
+              "C": "rise",
+              "D": "spread"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 36,
+            "stem": "The phrase \"urban planning\" in paragraph 4 could be best replaced by _______.",
+            "options": {
+              "A": "city destruction",
+              "B": "city organization",
+              "C": "rural development",
+              "D": "economic planning"
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 37,
+            "stem": "Which of the following is TRUE according to the passage?",
+            "options": {
+              "A": "Urbanization happens only in rich countries.",
+              "B": "All cities in Africa manage their growth well.",
+              "C": "Poor urban planning can lead to flooding.",
+              "D": "The world’s urban population is decreasing."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 38,
+            "stem": "Which of the following best paraphrases the underlined sentence in paragraph 5?",
+            "options": {
+              "A": "Urbanization will continue, but it needs to be controlled for sustainability.",
+              "B": "Urbanization should be stopped completely to protect the environment.",
+              "C": "Most cities around the world must stop growing to prevent pollution.",
+              "D": "Urbanization is a temporary issue that will disappear in the next century."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 39,
+            "stem": "Which of the following can be inferred from the passage?",
+            "options": {
+              "A": "Governments play a key role in making urbanization sustainable.",
+              "B": "Most of cities in Africa and Asia have no urbanization challenges.",
+              "C": "Urbanization in developing countries will stop in the next 50 years.",
+              "D": "The process of expanding cities does not affect the environment."
+            }
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "number": 40,
+            "stem": "Which of the following best summarizes the passage?",
+            "options": {
+              "A": "Cities are growing rapidly, resulting in opportunities and problems, so proper urban planning and sustainability measures are needed.",
+              "B": "Urbanization is only a problem in poor countries, and developed nations do not face any challenges related to city expansion.",
+              "C": "People are moving to cities in search of better jobs, and governments are implementing sustainable urbanization practices to prevent pollution.",
+              "D": "Many cities are expanding into rural areas, but this trend causes no negative effects on the environment as well as people's lives."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

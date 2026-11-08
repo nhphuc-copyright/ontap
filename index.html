@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
   <title>English Practice – Grade 12</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/mammoth@1.9.0/mammoth.browser.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -17,28 +17,27 @@
     <section class="intro">
       <p class="eyebrow">LUYỆN TẬP TIẾNG ANH 12</p>
       <h1>Revision Tests</h1>
-      <p>6 đề ôn tập · 40 câu mỗi đề · Chấm điểm tức thì</p>
+      <p>6 đề ôn tập · 40 câu mỗi đề · Phản hồi ngay khi chọn đáp án</p>
     </section>
 
-    <div id="status" class="status">Đang tải dữ liệu đề thi...</div>
+    <div id="status" class="status" role="status" aria-live="polite">Đang tải dữ liệu đề thi...</div>
+    <nav id="test-list" class="test-list" aria-label="Chọn đề"></nav>
 
-    <nav id="test-list" class="test-list"></nav>
-
-    <section id="quiz" hidden>
+    <section id="quiz" hidden aria-labelledby="test-title">
       <div class="quiz-heading">
         <div>
           <p class="eyebrow" id="test-label">TEST 1</p>
-          <h2 id="test-title">Practice test</h2>
+          <h2 id="test-title">Luyện tập</h2>
         </div>
-        <button id="reset-button" class="secondary">Làm lại</button>
+        <button id="reset-button" class="secondary" type="button">Làm lại</button>
       </div>
 
       <div class="progress-wrap">
         <div class="progress-info">
           <span id="progress-text">0/40 câu đã trả lời</span>
-          <span id="score-text">0 điểm</span>
+          <span id="score-text">0/40 câu đúng</span>
         </div>
-        <div class="progress-track">
+        <div class="progress-track" aria-hidden="true">
           <div id="progress-bar"></div>
         </div>
       </div>
@@ -46,8 +45,8 @@
       <div id="questions"></div>
 
       <div class="finish-area">
-        <button id="submit-button" class="primary">Nộp bài và xem kết quả</button>
-        <div id="result" hidden></div>
+        <button id="submit-button" class="primary" type="button">Nộp bài và xem kết quả</button>
+        <div id="result" hidden aria-live="polite"></div>
       </div>
     </section>
   </main>

@@ -1,379 +1,330 @@
-const DOCX_PATH = "data/de-on.docx";
+const DATA_PATH = "data/tests.json";
+const QUESTION_COUNT = 40;
 
 const statusBox = document.getElementById("status");
 const testList = document.getElementById("test-list");
 const quiz = document.getElementById("quiz");
 const questionsBox = document.getElementById("questions");
+const submitButton = document.getElementById("submit-button");
+const resetButton = document.getElementById("reset-button");
+const resultBox = document.getElementById("result");
 
 let tests = [];
 let currentTest = null;
-let answers = {};
+let answers = Object.create(null);
 let submitted = false;
 
-async function loadDocument() {
+async function loadTests() {
   try {
-    const response = await fetch(DOCX_PATH);
-
+    const response = await fetch(DATA_PATH, { cache: "no-store" });
     if (!response.ok) {
-      throw new Error("Không tìm thấy file data/de-on.docx");
+      throw new Error(`Không tải được ${DATA_PATH} (HTTP ${response.status}).`);
     }
 
-    const buffer = await response.arrayBuffer();
-    const result = await mammoth.convertToHtml({ arrayBuffer: buffer });
+    const payload = await response.json();
+    tests = Array.isArray(payload) ? payload : payload.tests;
 
-    tests = parseDocument(result.value);
-
-    if (tests.length !== 6) {
-      throw new Error(`Đọc được ${tests.length}/6 đề. Cần kiểm tra lại cấu trúc file Word.`);
+    const errors = validateTests(tests);
+    if (errors.length) {
+      throw new Error(errors.join(" "));
     }
 
-    statusBox.textContent =
-      "Đã tải dữ liệu. Chọn một đề để bắt đầu luyện tập.";
-
+    statusBox.textContent = "Đã tải đủ 6 đề. Chọn một đề để bắt đầu.";
+    statusBox.classList.add("status-success");
     renderTestList();
   } catch (error) {
-    statusBox.textContent =
-      "Không thể tải đề: " + error.message +
-      ". Hãy kiểm tra file Word và kết nối Internet.";
+    statusBox.textContent = `Không thể tải đề: ${error.message}`;
+    statusBox.classList.add("status-error");
     console.error(error);
   }
 }
 
-function parseDocument(html) {
-  const doc = new DOMParser().parseFromString(html, "text/html");
-  const paragraphs = [...doc.body.querySelectorAll("p, h1, h2, h3")];
+function validateTests(list) {
+  const errors = [];
 
-  const result = [];
-  let test = null;
-  let passage = [];
-  let question = null;
-
-  function finishQuestion() {
-    if (!question) return;
-    test.items.push({
-      type: "question",
-      data: question
-    });
-    question = null;
+  if (!Array.isArray(list) || list.length !== 6) {
+    return ["Dữ liệu phải có đủ 6 đề."];
   }
 
-  function flushPassage() {
-    if (!passage.length || !test) return;
+  for (const test of list) {
+    const questions = test.items?.filter(item => item.type === "question") ?? [];
 
-    test.items.push({
-      type: "passage",
-      data: passage.join("\n\n")
-    });
-
-    passage = [];
-  }
-
-  function finishTest() {
-    finishQuestion();
-    flushPassage();
-
-    if (test) result.push(test);
-    test = null;
-  }
-
-  function splitOptions(text) {
-    const regex = /(?:^|\s)([A-D])[\.\)]\s*/g;
-    const matches = [...text.matchAll(regex)];
-
-    if (matches.length < 2) return null;
-
-    const options = {};
-    const first = matches[0].index;
-    const stem = text.slice(0, first).trim();
-
-    matches.forEach((match, index) => {
-      const start = match.index + match[0].length;
-      const end = index + 1 < matches.length
-        ? matches[index + 1].index
-        : text.length;
-
-      options[match[1]] = text.slice(start, end).trim();
-    });
-
-    return { stem, options };
-  }
-
-  for (const element of paragraphs) {
-    const text = element.textContent.trim();
-    if (!text) continue;
-
-    const testMatch = text.match(/^TEST\s+([1-6])\b/i);
-
-    if (testMatch) {
-      finishTest();
-
-      test = {
-        id: Number(testMatch[1]),
-        title: `TEST ${testMatch[1]}`,
-        items: []
-      };
-
+    if (questions.length !== QUESTION_COUNT) {
+      errors.push(`${test.title}: có ${questions.length}/40 câu.`);
       continue;
     }
 
-    if (!test) continue;
-
-    const qMatch = text.match(/^Question\s+(\d+)\s*[:.]\s*(.*)$/i);
-
-    if (qMatch) {
-      finishQuestion();
-      flushPassage();
-
-      const parsed = splitOptions(qMatch[2]);
-
-      question = {
-        number: Number(qMatch[1]),
-        stem: parsed ? parsed.stem : qMatch[2],
-        options: parsed ? parsed.options : {}
-      };
-
-      continue;
+    const numbers = questions.map(item => Number(item.data.number));
+    if (numbers.some((number, index) => number !== index + 1)) {
+      errors.push(`${test.title}: số thứ tự câu hỏi không liên tục.`);
     }
 
-    if (question) {
-      const parsed = splitOptions(text);
+    for (const item of questions) {
+      const question = item.data;
+      const options = question.options || {};
+      const hasAllOptions = ["A", "B", "C", "D"].every(letter =>
+        typeof options[letter] === "string" && options[letter].trim().length > 0
+      );
 
-      if (parsed) {
-        Object.assign(question.options, parsed.options);
-
-        if (parsed.stem) {
-          question.stem += " " + parsed.stem;
-        }
-
-        continue;
+      if (!hasAllOptions) {
+        errors.push(`${test.title} – câu ${question.number}: thiếu lựa chọn.`);
       }
 
-      const optionStart = text.match(/^([A-D])[\.\)]\s*(.*)$/);
-
-      if (optionStart) {
-        question.options[optionStart[1]] = optionStart[2].trim();
-        continue;
+      const key = getAnswerKey(test.id, question.number);
+      if (!["A", "B", "C", "D"].includes(key)) {
+        errors.push(`${test.title} – câu ${question.number}: thiếu đáp án đúng.`);
       }
-
-      if (Object.keys(question.options).length < 4) {
-        question.stem += "\n" + text;
-        continue;
-      }
-
-      finishQuestion();
     }
-
-    passage.push(text);
   }
 
-  finishTest();
-  return result;
+  return errors;
+}
+
+function getAnswerKey(testId, questionNumber) {
+  return window.ANSWER_KEYS?.[testId]?.[questionNumber - 1] || "";
 }
 
 function renderTestList() {
-  testList.innerHTML = "";
+  testList.replaceChildren();
 
   tests.forEach(test => {
     const button = document.createElement("button");
+    button.type = "button";
     button.className = "test-card";
-    button.innerHTML = `
-      <strong>${test.title}</strong>
-      <span>${test.items.filter(x => x.type === "question").length} câu hỏi</span>
-    `;
+    button.dataset.testId = String(test.id);
 
+    const title = document.createElement("strong");
+    title.textContent = test.title;
+
+    const subtitle = document.createElement("span");
+    subtitle.textContent = "40 câu hỏi";
+
+    button.append(title, subtitle);
     button.addEventListener("click", () => openTest(test.id));
     testList.appendChild(button);
   });
 }
 
-function openTest(id) {
-  currentTest = tests.find(test => test.id === id);
+function openTest(testId) {
+  currentTest = tests.find(test => test.id === testId);
   if (!currentTest) return;
 
-  answers = {};
+  answers = Object.create(null);
   submitted = false;
+
+  document.querySelectorAll(".test-card").forEach(button => {
+    button.classList.toggle("active", Number(button.dataset.testId) === testId);
+  });
 
   quiz.hidden = false;
   document.getElementById("test-label").textContent = currentTest.title;
   document.getElementById("test-title").textContent = "Luyện tập";
-  document.getElementById("result").hidden = true;
+  resultBox.hidden = true;
+  resultBox.replaceChildren();
+
+  submitButton.disabled = false;
+  submitButton.textContent = "Nộp bài và xem kết quả";
 
   renderQuestions();
 
   window.scrollTo({
-    top: quiz.offsetTop - 20,
+    top: quiz.getBoundingClientRect().top + window.scrollY - 20,
     behavior: "smooth"
   });
 }
 
 function renderQuestions() {
-  questionsBox.innerHTML = "";
+  questionsBox.replaceChildren();
 
-  currentTest.items.forEach(item => {
+  for (const item of currentTest.items) {
     if (item.type === "passage") {
-      const passage = document.createElement("div");
+      const passage = document.createElement("section");
       passage.className = "passage";
+      passage.setAttribute("aria-label", "Đoạn đọc hoặc nội dung câu hỏi");
       passage.textContent = item.data;
       questionsBox.appendChild(passage);
-      return;
+      continue;
     }
 
-    const q = item.data;
+    const question = item.data;
     const card = document.createElement("article");
     card.className = "question";
-    card.id = `question-${q.number}`;
+    card.id = `question-${question.number}`;
 
-    const title = document.createElement("div");
-    title.className = "question-title";
-    title.innerHTML =
-      `<span class="question-number">Câu ${q.number}.</span>`;
+    const heading = document.createElement("div");
+    heading.className = "question-title";
 
-    title.append(document.createTextNode(q.stem));
-    card.appendChild(title);
+    const number = document.createElement("span");
+    number.className = "question-number";
+    number.textContent = `Câu ${question.number}.`;
+    heading.appendChild(number);
+
+    const stem = document.createElement("div");
+    stem.className = "question-stem";
+    stem.textContent = question.stem;
+    heading.appendChild(stem);
+    card.appendChild(heading);
 
     const options = document.createElement("div");
     options.className = "options";
+    options.setAttribute("role", "group");
+    options.setAttribute("aria-label", `Các lựa chọn câu ${question.number}`);
 
-    ["A", "B", "C", "D"].forEach(letter => {
+    for (const letter of ["A", "B", "C", "D"]) {
       const label = document.createElement("label");
       label.className = "option";
       label.dataset.choice = letter;
 
       const radio = document.createElement("input");
       radio.type = "radio";
-      radio.name = `q-${q.number}`;
+      radio.name = `test-${currentTest.id}-q-${question.number}`;
       radio.value = letter;
+      radio.checked = answers[question.number] === letter;
+      radio.disabled = submitted;
+      radio.setAttribute("aria-label", `Đáp án ${letter}`);
 
       const text = document.createElement("span");
-      text.textContent =
-        `${letter}. ${q.options[letter] || "(Không đọc được lựa chọn)"}`;
+      text.className = "option-text";
+      text.textContent = `${letter}. ${question.options[letter]}`;
 
       radio.addEventListener("change", () => {
-        if (submitted) return;
-
-        answers[q.number] = letter;
-        updateQuestionFeedback(card, q.number);
+        if (submitted || !radio.checked) return;
+        answers[question.number] = letter;
+        updateQuestionFeedback(card, question);
         updateProgress();
       });
 
       label.append(radio, text);
       options.appendChild(label);
-    });
+    }
 
     card.appendChild(options);
 
     const feedback = document.createElement("div");
     feedback.className = "feedback";
     feedback.hidden = true;
+    feedback.setAttribute("aria-live", "polite");
     card.appendChild(feedback);
 
     questionsBox.appendChild(card);
-  });
+  }
 
   updateProgress();
 }
 
-function getCorrectAnswer(number) {
-  return window.ANSWER_KEYS[currentTest.id]?.[number - 1];
-}
-
-function updateQuestionFeedback(card, number) {
-  const selected = answers[number];
-  const correct = getCorrectAnswer(number);
+function updateQuestionFeedback(card, question) {
+  const selected = answers[question.number];
+  const correct = getAnswerKey(currentTest.id, question.number);
   const feedback = card.querySelector(".feedback");
 
   card.querySelectorAll(".option").forEach(option => {
     const choice = option.dataset.choice;
+    option.classList.remove("correct", "wrong", "selected");
 
-    option.classList.remove("correct", "wrong");
-
-    if (choice === correct) {
+    if ((selected || submitted) && choice === correct) {
       option.classList.add("correct");
     }
 
-    if (selected === choice && selected !== correct) {
-      option.classList.add("wrong");
+    if (selected === choice) {
+      option.classList.add("selected");
+      if (selected !== correct) option.classList.add("wrong");
     }
   });
 
+  if (!selected && !submitted) {
+    feedback.hidden = true;
+    feedback.textContent = "";
+    return;
+  }
+
   feedback.hidden = false;
+  feedback.replaceChildren();
+
+  const answerText = question.options[correct] || "Không có nội dung đáp án.";
+  const answerLine = document.createElement("span");
 
   if (selected === correct) {
-    feedback.textContent = "✓ Chính xác!";
     feedback.className = "feedback correct";
-  } else {
-    feedback.textContent = `✗ Chưa chính xác. Đáp án đúng: ${correct || "Chưa có đáp án"}`;
+    answerLine.textContent = `✓ Chính xác! Đáp án: ${correct}. ${answerText}`;
+  } else if (selected) {
     feedback.className = "feedback wrong";
+    answerLine.textContent = `✗ Chưa chính xác. Đáp án đúng: ${correct}. ${answerText}`;
+  } else {
+    feedback.className = "feedback unanswered";
+    answerLine.textContent = `Chưa trả lời. Đáp án đúng: ${correct}. ${answerText}`;
   }
+
+  feedback.appendChild(answerLine);
 }
 
 function updateProgress() {
-  const total = currentTest.items.filter(x => x.type === "question").length;
+  if (!currentTest) return;
+
   const answered = Object.keys(answers).length;
-
-  let score = 0;
-
-  Object.entries(answers).forEach(([number, answer]) => {
-    if (answer === getCorrectAnswer(Number(number))) score++;
-  });
+  const total = currentTest.items.filter(item => item.type === "question").length;
+  const score = Object.entries(answers).filter(([number, answer]) =>
+    answer === getAnswerKey(currentTest.id, Number(number))
+  ).length;
 
   document.getElementById("progress-text").textContent =
     `${answered}/${total} câu đã trả lời`;
-
   document.getElementById("score-text").textContent =
     `${score}/${total} câu đúng`;
-
   document.getElementById("progress-bar").style.width =
-    `${total ? answered / total * 100 : 0}%`;
+    `${total ? (answered / total) * 100 : 0}%`;
 }
 
-document.getElementById("submit-button").addEventListener("click", () => {
-  if (!currentTest) return;
+function submitTest() {
+  if (!currentTest || submitted) return;
 
   submitted = true;
+  const questionItems = currentTest.items.filter(item => item.type === "question");
 
-  const total = currentTest.items.filter(x => x.type === "question").length;
-  const answered = Object.keys(answers).length;
-
-  let score = 0;
-
-  Object.entries(answers).forEach(([number, answer]) => {
-    if (answer === getCorrectAnswer(Number(number))) score++;
-  });
-
-  const result = document.getElementById("result");
-  result.hidden = false;
-
-  result.innerHTML = `
-    <p class="eyebrow">KẾT QUẢ BÀI LÀM</p>
-    <div class="result-score">${score}/${total}</div>
-    <p>Đúng ${score} câu · Sai ${answered - score} câu · Chưa làm ${total - answered} câu</p>
-  `;
-
-  currentTest.items
-    .filter(item => item.type === "question")
-    .forEach(item => {
-      const card = document.getElementById(`question-${item.data.number}`);
-      const correct = getCorrectAnswer(item.data.number);
-
-      card.querySelectorAll(".option").forEach(option => {
-        option.querySelector("input").disabled = true;
-
-        if (option.dataset.choice === correct) {
-          option.classList.add("correct");
-        }
-      });
+  for (const item of questionItems) {
+    const card = document.getElementById(`question-${item.data.number}`);
+    card.querySelectorAll("input[type=radio]").forEach(radio => {
+      radio.disabled = true;
     });
+    updateQuestionFeedback(card, item.data);
+  }
 
-  document.getElementById("submit-button").disabled = true;
-  document.getElementById("submit-button").textContent = "Đã nộp bài";
-});
+  const total = questionItems.length;
+  const answered = Object.keys(answers).length;
+  const score = Object.entries(answers).filter(([number, answer]) =>
+    answer === getAnswerKey(currentTest.id, Number(number))
+  ).length;
+  const wrong = answered - score;
+  const unanswered = total - answered;
+  const percent = Math.round((score / total) * 100);
 
-document.getElementById("reset-button").addEventListener("click", () => {
+  resultBox.hidden = false;
+  resultBox.replaceChildren();
+
+  const eyebrow = document.createElement("p");
+  eyebrow.className = "eyebrow";
+  eyebrow.textContent = "KẾT QUẢ BÀI LÀM";
+
+  const scoreText = document.createElement("div");
+  scoreText.className = "result-score";
+  scoreText.textContent = `${score}/${total}`;
+
+  const details = document.createElement("p");
+  details.textContent =
+    `Đúng ${score} câu · Sai ${wrong} câu · Chưa làm ${unanswered} câu · ${percent}%`;
+
+  resultBox.append(eyebrow, scoreText, details);
+  submitButton.disabled = true;
+  submitButton.textContent = "Đã nộp bài";
+  updateProgress();
+
+  resultBox.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function resetTest() {
   if (currentTest) openTest(currentTest.id);
-  document.getElementById("submit-button").disabled = false;
-  document.getElementById("submit-button").textContent =
-    "Nộp bài và xem kết quả";
-});
+}
 
-loadDocument();
+submitButton.addEventListener("click", submitTest);
+resetButton.addEventListener("click", resetTest);
+
+loadTests();
