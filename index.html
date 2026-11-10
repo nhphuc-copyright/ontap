@@ -162,6 +162,78 @@ body{font-size:16px;line-height:1.65}
   .hero h1{font-size:22px}
 }
 
+
+/* Refined true/false rows and clearer review actions */
+.tf-intro{font-size:15px;line-height:1.7}
+.tf-row{position:relative;background:#fbfcff;border:1px solid #e8edf5;border-radius:14px;padding:16px 16px;margin-top:10px;border-top:1px solid #e8edf5}
+.tf-row:first-of-type{margin-top:0}
+.tf-row-top{gap:10px}
+.tf-statement{font-size:16px;line-height:1.65;font-weight:600;color:#26344d}
+.tf-actions{display:grid;grid-template-columns:repeat(2,minmax(0,145px));gap:8px;margin:12px 0 0 38px}
+.tf-choice{min-width:0;min-height:41px;padding:8px 12px;border-radius:10px;font-size:13px;font-weight:750;letter-spacing:.01em}
+.tf-note{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0 38px;padding:6px 10px;border-radius:9px;font-size:13px;line-height:1.45;font-weight:750}
+.tf-note.good{background:#e9f8f0;color:#137348}
+.tf-note.bad{background:#fff0f1;color:#b8323d}
+.study-tools{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;margin:-7px 0 20px;box-shadow:var(--shadow)}
+.study-tools-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.study-tools-title{font-size:14px;font-weight:850;color:var(--ink);margin:0}
+.study-tools-caption{font-size:12px;color:var(--muted);line-height:1.5;margin:3px 0 0}
+.study-tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.study-action{display:flex;align-items:center;gap:11px;min-width:0;width:100%;text-align:left;padding:13px;border:1px solid #e7ebf3;border-radius:13px;background:#fff;color:var(--ink);cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.study-action:hover:not(:disabled){transform:translateY(-1px);border-color:#b9c9f7;background:#f9fbff}
+.study-action:disabled{cursor:not-allowed;opacity:.58;background:#f8f9fc}
+.study-action-icon{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:12px;background:#edf2ff;color:var(--blue);font-size:19px;font-weight:850}
+.study-action.review .study-action-icon{background:#fff3e6;color:#b86a16}
+.study-action-copy{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.study-action-copy strong{font-size:13px;font-weight:850;line-height:1.35}
+.study-action-copy small{font-size:11px;color:var(--muted);line-height:1.45;font-weight:550}
+.study-action-count{flex:0 0 auto;padding:4px 7px;border-radius:99px;background:#f0f3f8;color:#63718a;font-size:10px;font-weight:850;white-space:nowrap}
+.study-action.review .study-action-count{background:#fff0da;color:#a85c0b}
+.retry-toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 14px}
+.retry-toolbar .btn{min-height:42px}
+.completion{padding:23px}
+.completion-actions-title{font-size:10px;letter-spacing:.12em;font-weight:850;color:#8995a9;margin:17px 0 9px}
+.completion-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+.review-tile{display:flex;align-items:center;gap:11px;min-width:0;width:100%;padding:13px;text-align:left;border:1px solid #e6ebf3;border-radius:13px;background:#fff;color:var(--ink);cursor:pointer;transition:.15s}
+.review-tile:hover{border-color:#b9c9f7;background:#f9fbff;transform:translateY(-1px)}
+.review-tile.primary{border-color:#d7e2ff;background:#f5f8ff}
+.review-tile-icon{width:36px;height:36px;display:grid;place-items:center;flex:0 0 36px;border-radius:11px;background:#eaf0ff;color:var(--blue);font-size:18px;font-weight:850}
+.review-tile.primary .review-tile-icon{background:#dfe8ff}
+.review-tile.secondary .review-tile-icon{background:#f0f3f8;color:#66758d}
+.review-tile-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.review-tile-copy strong{font-size:13px;line-height:1.35;font-weight:850}
+.review-tile-copy small{font-size:11px;line-height:1.4;color:var(--muted)}
+.completion-next{margin-top:10px}
+@media(max-width:800px){
+ .study-tools{margin-top:-5px;padding:14px}
+ .study-tools-title{font-size:15px}
+ .study-action{padding:12px}
+ .tf-statement{font-size:16px}
+}
+@media(max-width:560px){
+ .study-tools{padding:12px;margin-bottom:17px}
+ .study-tools-head{margin-bottom:10px}
+ .study-tools-grid,.completion-actions{grid-template-columns:1fr;gap:8px}
+ .study-action{min-height:68px;padding:11px}
+ .study-action-icon{width:36px;height:36px;flex-basis:36px}
+ .study-action-copy strong{font-size:13px}
+ .study-action-copy small{font-size:11px}
+ .tf-row{padding:14px 12px;margin-top:9px}
+ .tf-statement{font-size:16px;line-height:1.68}
+ .tf-actions{grid-template-columns:repeat(2,minmax(0,1fr));margin:11px 0 0 38px;gap:8px}
+ .tf-choice{min-height:40px;font-size:13px;padding:8px 9px}
+ .tf-note{margin:9px 0 0 38px;font-size:12px}
+ .retry-toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .retry-toolbar .btn{padding:10px 9px;font-size:12px}
+ .completion{padding:17px}
+ .review-tile{padding:12px}
+}
+@media(max-width:380px){
+ .tf-row-top{gap:8px}
+ .tf-actions,.tf-note{margin-left:36px}
+ .tf-statement{font-size:15.5px}
+}
+
 </style>
 </head>
 <body>
@@ -186,6 +258,7 @@ body{font-size:16px;line-height:1.65}
         <div class="progress-top"><strong>Tiến độ bài này</strong><span class="progress-detail" id="lessonProgressText">0 / 11 câu đã làm</span></div>
         <div class="track"><span id="lessonProgressBar"></span></div>
       </section>
+      <div id="studyActions" aria-label="Thao tác ôn tập"></div>
       <div id="quizContent"></div>
       <div id="completionArea"></div>
     </main>
@@ -293,7 +366,11 @@ function renderMultipleChoice(question, questionIndex, mode='lesson', retryKey=n
   LETTERS.forEach(letter=>{
     const choice=button('',`option ${saved && letter===question.dap_an?'correct':''}${saved && saved.selected===letter && !saved.correct?' wrong':''}`,()=>{
       if(map[key]) return;
-      map[key]={selected:letter,correct:letter===question.dap_an};
+      const isCorrect=letter===question.dap_an;
+      map[key]={selected:letter,correct:isCorrect};
+      if(mode==='retry' && isCorrect){
+        lessonAnswerMap(state.lessonIndex)[`mc:${questionIndex}`]={selected:letter,correct:true};
+      }
       rerenderKeepingPosition();
     },!!saved);
     choice.append(node('span','option-letter',letter),node('span','option-text',escapeText(question[letter])));
@@ -326,6 +403,9 @@ function renderTrueFalseRow(statement, index, mode='lesson', retryKey=null) {
     controls.append(button(label,cls,()=>{
       if(map[key]) return;
       map[key]={selected:value,correct:isCorrect};
+      if(mode==='retry' && isCorrect){
+        lessonAnswerMap(state.lessonIndex)[`tf:${index}`]={selected:value,correct:true};
+      }
       rerenderKeepingPosition();
     },!!saved));
   });
@@ -362,6 +442,14 @@ function buildRetryFromRemaining() {
   state.retryAnswers={};
   if(!state.retryItems.length){state.view='retryDone';}
 }
+function actionTile(icon, title, description, variant, onClick) {
+  const tile=button('',`review-tile ${variant||''}`,onClick);
+  tile.append(node('span','review-tile-icon',icon));
+  const copy=node('span','review-tile-copy');
+  copy.append(node('strong','',title),node('small','',description));
+  tile.append(copy);
+  return tile;
+}
 function renderCompletion({retry=false}={}) {
   const area=$('#completionArea'); area.replaceChildren();
   const lesson=DATA.bai[state.lessonIndex];
@@ -372,36 +460,104 @@ function renderCompletion({retry=false}={}) {
     const wrong=state.retryItems.filter(item=>!map[item.key]?.correct).length;
     const box=node('section','completion');
     const head=node('div','completion-top'); head.append(node('div','completion-mark',wrong?'↻':'✓'));
-    const title=node('div'); title.append(node('h3','',wrong?'Vẫn còn một vài câu cần ôn':'Bạn đã ôn đúng toàn bộ!'),node('p','',wrong?`Bạn đã làm đúng ${correct}/${total}. Có ${wrong} câu/ý cần thử lại.`:'Phần câu hỏi đã sai ở lượt trước đã được hoàn thành.')); head.append(title);box.append(head);
-    const scores=node('div','score-row');scores.append(node('span','score-chip',`${correct}/${total} trả lời đúng`),node('span','score-chip',`${wrong} câu/ý còn sai`));box.append(scores);
-    const actions=node('div','actions');
-    if(wrong) actions.append(button('Ôn lại câu/ý còn sai','btn btn-primary',()=>{buildRetryFromRemaining();render();window.scrollTo({top:0,behavior:'smooth'});}));
-    actions.append(button('Quay lại bài học','btn btn-secondary',()=>{state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});}));
-    actions.append(button('Làm lại bài này','btn btn-quiet',()=>restartLesson()));box.append(actions);area.append(box);return;
+    const title=node('div');
+    title.append(
+      node('h3','',wrong?'Vẫn còn câu/ý cần ôn':'Bạn đã ôn đúng toàn bộ!'),
+      node('p','',wrong?`Bạn đã trả lời đúng ${correct}/${total}. Còn ${wrong} câu/ý chưa chính xác.`:'Tất cả câu/ý trong lượt ôn này đã được trả lời chính xác.')
+    );
+    head.append(title); box.append(head);
+    const scores=node('div','score-row');
+    scores.append(node('span','score-chip',`${correct}/${total} trả lời đúng`),node('span','score-chip',`${wrong} câu/ý còn sai`));
+    box.append(scores);
+    box.append(node('div','completion-actions-title','BẠN MUỐN TIẾP TỤC THẾ NÀO?'));
+    const actions=node('div','completion-actions');
+    if(wrong){
+      actions.append(actionTile('↻',`Ôn lại ${wrong} câu/ý còn sai`,'Luyện tiếp những câu chưa đúng.','primary',()=>{
+        buildRetryFromRemaining(); render(); window.scrollTo({top:0,behavior:'smooth'});
+      }));
+    }
+    actions.append(actionTile('▤','Quay lại bài học','Trở về bài và giữ nguyên kết quả đã làm.','secondary',()=>{
+      state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+    }));
+    actions.append(actionTile('⟲','Làm lại toàn bộ bài','Xóa kết quả bài này và bắt đầu từ đầu.','secondary',()=>restartLesson()));
+    box.append(actions); area.append(box); return;
   }
   const counts=lessonCounts(state.lessonIndex);
   if(counts.answered<counts.total)return;
   const wrong=buildWrongItems(state.lessonIndex);
   const box=node('section','completion');
   const head=node('div','completion-top');head.append(node('div','completion-mark',wrong.length?'✓':'★'));
-  const title=node('div');title.append(node('h3','',wrong.length?'Đã hoàn thành bài học!':'Xuất sắc! Bạn đã đúng tất cả.'),node('p','',wrong.length?`Bạn đã trả lời đúng ${counts.correct}/${counts.total}. Hãy ôn thêm những câu/ý chưa đúng nhé.`:'Bạn đã hoàn thành bài này mà không có câu trả lời sai.'));head.append(title);box.append(head);
-  const scores=node('div','score-row');scores.append(node('span','score-chip',`${counts.correct}/${counts.total} trả lời đúng`),node('span','score-chip',`${wrong.length} câu/ý cần ôn`));box.append(scores);
-  const actions=node('div','actions');
-  if(wrong.length)actions.append(button(`Làm lại ${wrong.length} câu/ý sai`,'btn btn-primary',()=>startRetry(wrong)));
-  actions.append(button('Làm lại bài này','btn btn-secondary',()=>restartLesson()));
-  if(state.lessonIndex<DATA.bai.length-1)actions.append(button('Sang bài tiếp theo →','btn btn-quiet',()=>selectLesson(state.lessonIndex+1)));
-  box.append(actions);area.append(box);
+  const title=node('div');
+  title.append(
+    node('h3','',wrong.length?'Đã hoàn thành bài học!':'Xuất sắc! Bạn đã đúng tất cả.'),
+    node('p','',wrong.length?`Bạn đã trả lời đúng ${counts.correct}/${counts.total}. Bạn có thể ôn riêng phần chưa đúng hoặc làm lại toàn bộ bài.`:'Bạn đã hoàn thành bài này mà không có câu trả lời sai.')
+  );
+  head.append(title);box.append(head);
+  const scores=node('div','score-row');
+  scores.append(node('span','score-chip',`${counts.correct}/${counts.total} trả lời đúng`),node('span','score-chip',`${wrong.length} câu/ý cần ôn`));
+  box.append(scores);
+  box.append(node('div','completion-actions-title','CHỌN CÁCH ÔN TIẾP'));
+  const actions=node('div','completion-actions');
+  if(wrong.length){
+    actions.append(actionTile('↻',`Ôn ${wrong.length} câu/ý sai`,'Chỉ làm lại những câu bạn đã chọn nhầm.','primary',()=>startRetry(wrong)));
+  }else{
+    actions.append(actionTile('✓','Không có câu sai','Bạn đã trả lời đúng toàn bộ bài này.','primary',()=>restartLesson()));
+  }
+  actions.append(actionTile('⟲','Làm lại bài này','Xóa kết quả và bắt đầu lại từ câu đầu tiên.','secondary',()=>restartLesson()));
+  box.append(actions);
+  if(state.lessonIndex<DATA.bai.length-1){
+    const next=node('div','completion-next');
+    next.append(button(`Sang Bài ${DATA.bai[state.lessonIndex+1].so}: ${DATA.bai[state.lessonIndex+1].tieu_de} →`,'btn btn-quiet',()=>selectLesson(state.lessonIndex+1)));
+    box.append(next);
+  }
+  area.append(box);
+}
+function renderStudyActions() {
+  const area=$('#studyActions');
+  area.replaceChildren();
+  if(state.view!=='lesson') return;
+  const counts=lessonCounts(state.lessonIndex);
+  const wrong=buildWrongItems(state.lessonIndex);
+  const panel=node('section','study-tools');
+  const header=node('div','study-tools-head');
+  const intro=node('div');
+  intro.append(node('h3','study-tools-title','Ôn tập nhanh'),node('p','study-tools-caption','Bạn có thể bắt đầu lại bài hoặc luyện riêng những câu đã trả lời sai.'));
+  header.append(intro); panel.append(header);
+  const grid=node('div','study-tools-grid');
+  const restart=button('', 'study-action restart',()=>restartLesson());
+  restart.append(node('span','study-action-icon','⟲'));
+  const restartCopy=node('span','study-action-copy');
+  restartCopy.append(node('strong','','Làm lại bài này'),node('small','','Xóa tiến độ bài hiện tại và làm từ đầu.'));
+  restart.append(restartCopy,node('span','study-action-count','Toàn bài'));
+  grid.append(restart);
+  const retry=button('', 'study-action review',()=>startRetry(wrong),wrong.length===0);
+  retry.append(node('span','study-action-icon','↻'));
+  const retryCopy=node('span','study-action-copy');
+  retryCopy.append(node('strong','','Ôn câu/ý đã sai'),node('small','',wrong.length?'Làm lại riêng các câu bạn chọn nhầm.':'Chưa có câu sai để ôn lại.'));
+  retry.append(retryCopy,node('span','study-action-count',`${wrong.length} câu/ý`));
+  grid.append(retry); panel.append(grid); area.append(panel);
 }
 function startRetry(items) {
-  state.view='retry';state.retryItems=items.map(item=>({...item}));state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+  if(!items || !items.length) return;
+  state.view='retry';state.retryItems=items.map(item=>({...item}));state.retryAnswers={};
+  render();window.scrollTo({top:0,behavior:'smooth'});
 }
 function restartLesson() {
-  state.answers[state.lessonIndex]={};state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+  const counts=lessonCounts(state.lessonIndex);
+  if(counts.answered>0 && !confirm('Làm lại bài này sẽ xóa kết quả hiện tại của riêng bài học. Bạn có muốn tiếp tục không?')) return;
+  state.answers[state.lessonIndex]={};state.view='lesson';state.retryItems=[];state.retryAnswers={};
+  render();window.scrollTo({top:0,behavior:'smooth'});
 }
 function renderRetry() {
   const lesson=DATA.bai[state.lessonIndex], content=$('#quizContent');content.replaceChildren();
+  const toolbar=node('div','retry-toolbar');
+  toolbar.append(
+    button('← Quay lại bài học','btn btn-secondary',()=>{state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});}),
+    button('⟲ Làm lại toàn bộ bài','btn btn-quiet',()=>restartLesson())
+  );
+  content.append(toolbar);
   const heading=node('div','section-heading');heading.append(node('div','section-icon','↻'),node('h2','','Ôn lại câu/ý đã sai'),node('span','',`${state.retryItems.length} câu/ý`));content.append(heading);
-  const intro=node('div','tf-intro','Các câu/ý dưới đây được lấy từ những phần bạn đã trả lời chưa chính xác. Chọn lại đáp án để kiểm tra ngay.');content.append(intro);
+  const intro=node('div','tf-intro',`Đây là ${state.retryItems.length} câu/ý bạn đã trả lời chưa chính xác. Chọn lại đáp án để kiểm tra ngay.`);content.append(intro);
   state.retryItems.forEach(item=>{
     if(item.type==='mc')content.append(renderMultipleChoice(item.question,item.questionIndex,'retry',item.key));
     else content.append(renderTrueFalseGroup(lesson,'retry',item));
@@ -426,6 +582,7 @@ function render() {
   else if(state.view==='retryDone'){
     $('#quizContent').replaceChildren();renderCompletion({retry:true});
   }else renderLesson();
+  renderStudyActions();
   refreshOverall();
   if(state.view==='retry'){
     const total=state.retryItems.length,answered=Object.keys(state.retryAnswers).length;
