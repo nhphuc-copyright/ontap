@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f7fb">
+<title>Ôn tập Tin học · Bài 1–9</title>
+<style>
+:root{
+  --bg:#f4f6fb;--surface:#fff;--surface-soft:#f8faff;--ink:#18243a;--muted:#728099;
+  --line:#e7ebf3;--blue:#3867e8;--blue-soft:#edf2ff;--green:#168653;--green-bg:#e9f8f0;
+  --red:#d84952;--red-bg:#fff0f1;--shadow:0 10px 30px rgba(30,48,86,.06);--radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.55}
+button{font:inherit}
+.app{min-height:100vh}
+.topbar{height:76px;background:rgba(255,255,255,.88);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1450px)/2));position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#4777f1,#284fca);display:grid;place-items:center;color:#fff;font-size:21px;box-shadow:0 7px 16px rgba(56,103,232,.22)}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}.brand-kicker{color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.brand-name{font-size:16px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.top-right{display:flex;align-items:center;gap:16px}.overall-wrap{min-width:190px}.overall-label{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;font-weight:700;margin-bottom:6px}.track{height:7px;background:#e9edf5;border-radius:99px;overflow:hidden}.track>span{display:block;height:100%;width:0;background:linear-gradient(90deg,#4777f1,#31b98a);border-radius:inherit;transition:width .25s}
+.text-button{border:0;background:transparent;color:#65728b;font-weight:700;padding:9px 11px;border-radius:10px;cursor:pointer}.text-button:hover{background:#f1f4fa;color:var(--ink)}
+.layout{max-width:1450px;margin:0 auto;padding:28px 24px 60px;display:grid;grid-template-columns:274px minmax(0,1fr);gap:26px;align-items:start}
+.sidebar{position:sticky;top:100px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 14px;box-shadow:var(--shadow)}
+.side-heading{display:flex;justify-content:space-between;align-items:center;padding:4px 7px 14px}.side-title{font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:800}.side-count{font-size:11px;color:var(--blue);background:var(--blue-soft);padding:4px 8px;border-radius:99px;font-weight:800}
+.lesson-list{display:grid;gap:5px}.lesson-link{display:flex;align-items:center;gap:11px;width:100%;border:1px solid transparent;background:transparent;text-align:left;padding:10px 9px;border-radius:12px;cursor:pointer;color:var(--ink);transition:.15s}
+.lesson-link:hover{background:#f7f9fd}.lesson-link.active{background:var(--blue-soft);border-color:#dce5ff}.lesson-num{width:32px;height:32px;flex:0 0 32px;border-radius:10px;background:#f0f3f8;color:#77849c;display:grid;place-items:center;font-size:12px;font-weight:800}.lesson-link.active .lesson-num{background:var(--blue);color:#fff}.lesson-copy{min-width:0;flex:1}.lesson-name{display:block;font-size:12px;font-weight:750;line-height:1.35}.lesson-meta{display:block;color:var(--muted);font-size:10px;margin-top:3px}.lesson-tick{font-size:13px;color:var(--green);font-weight:900}
+.side-bottom{border-top:1px solid var(--line);margin-top:15px;padding:15px 7px 2px}.side-bottom strong{font-size:13px}.side-bottom p{margin:4px 0 10px;color:var(--muted);font-size:11px}
+.main{min-width:0}.mobile-lessons{display:none}
+.hero{border-radius:22px;padding:28px 30px;background:linear-gradient(115deg,#1e3673 0%,#2e55b7 58%,#3b70dd 100%);color:white;position:relative;overflow:hidden;box-shadow:0 14px 34px rgba(39,76,166,.16)}
+.hero:after{content:"";position:absolute;width:310px;height:310px;right:-95px;top:-155px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 70px rgba(255,255,255,.025)}
+.hero-content{position:relative;z-index:1;max-width:760px}.hero-eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:850;color:#c7d6ff}.hero h1{font-size:clamp(23px,3vw,32px);line-height:1.22;letter-spacing:-.035em;margin:8px 0 8px}.hero p{margin:0;color:#e0e8ff;font-size:13px;max-width:650px}.hero-stats{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.hero-pill{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.1);border-radius:99px;padding:6px 11px;font-size:11px;font-weight:700;color:#f4f7ff}
+.progress-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:15px 18px;margin:17px 0 22px;box-shadow:var(--shadow)}.progress-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}.progress-top strong{font-size:12px}.progress-detail{font-size:11px;color:var(--muted);font-weight:700}.progress-card .track{height:8px}
+.section-heading{display:flex;align-items:center;gap:10px;margin:24px 0 12px}.section-icon{width:30px;height:30px;border-radius:10px;background:#eaf0ff;color:var(--blue);display:grid;place-items:center;font-size:14px;font-weight:900}.section-heading h2{font-size:15px;margin:0;letter-spacing:-.01em}.section-heading span{font-size:11px;color:var(--muted);margin-left:auto;font-weight:650}
+.question-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:19px 20px;margin-bottom:12px;box-shadow:0 4px 16px rgba(30,48,86,.035);scroll-margin-top:100px}.q-top{display:flex;align-items:center;gap:9px;margin-bottom:10px}.q-number{height:27px;min-width:27px;padding:0 7px;border-radius:8px;background:#f0f3f9;color:#64738e;display:grid;place-items:center;font-size:11px;font-weight:850}.q-type{font-size:10px;color:#8390a7;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.q-prompt{font-size:14px;line-height:1.65;font-weight:700;margin:0 0 13px;white-space:pre-wrap;overflow-wrap:anywhere}.q-context{font-size:12px;color:#66748c;background:#f7f9fd;padding:11px 13px;border-radius:11px;margin:0 0 12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.option{display:flex;align-items:flex-start;gap:10px;min-height:48px;text-align:left;width:100%;padding:11px 12px;border:1px solid #e4e9f2;border-radius:12px;background:#fff;color:#33415a;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}.option:hover:not(:disabled){border-color:#9fb6fa;background:#f8faff;transform:translateY(-1px)}.option:disabled{cursor:default;opacity:1}.option-letter{width:25px;height:25px;flex:0 0 25px;border-radius:8px;background:#f0f3f8;color:#65738c;display:grid;place-items:center;font-size:11px;font-weight:850}.option-text{font-size:12px;line-height:1.5;padding-top:2px;overflow-wrap:anywhere}.option.correct{border-color:#8bd3ad;background:var(--green-bg);color:#116b43}.option.correct .option-letter{background:#c9efd9;color:#116b43}.option.wrong{border-color:#f0a1a5;background:var(--red-bg);color:#b52e39}.option.wrong .option-letter{background:#ffd9dc;color:#b52e39}
+.answer-note{display:flex;align-items:flex-start;gap:8px;margin-top:12px;padding:10px 12px;border-radius:11px;font-size:12px;line-height:1.5}.answer-note.good{background:var(--green-bg);color:#116b43}.answer-note.bad{background:var(--red-bg);color:#b52e39}.answer-icon{font-weight:900;font-size:14px;line-height:1.3}
+.tf-intro{background:#f7f9fd;border:1px solid #edf0f6;border-radius:13px;padding:13px 14px;margin:0 0 11px;color:#3e4c64;font-size:12px;line-height:1.6}.tf-intro strong{display:block;color:#8290a8;font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}.tf-row{padding:14px 0;border-top:1px solid #eef1f6}.tf-row:first-of-type{border-top:0}.tf-row-top{display:flex;gap:9px;align-items:flex-start}.tf-letter{width:24px;height:24px;flex:0 0 24px;display:grid;place-items:center;border-radius:8px;background:#eff3fb;color:#53627d;font-size:11px;font-weight:850}.tf-statement{font-size:12px;line-height:1.6;font-weight:650;overflow-wrap:anywhere}.tf-actions{display:flex;gap:8px;margin:11px 0 0 33px}.tf-choice{min-width:100px;padding:8px 15px;border:1px solid #e3e8f1;border-radius:10px;background:#fff;color:#53627c;font-size:11px;font-weight:800;cursor:pointer}.tf-choice:hover:not(:disabled){border-color:#9fb6fa;background:#f8faff}.tf-choice:disabled{cursor:default;opacity:1}.tf-choice.selected-correct{border-color:#8bd3ad;background:var(--green-bg);color:#116b43}.tf-choice.selected-wrong{border-color:#f0a1a5;background:var(--red-bg);color:#b52e39}.tf-choice.correct-answer{border-color:#8bd3ad;background:var(--green-bg);color:#116b43}.tf-note{margin:9px 0 0 33px;font-size:11px;font-weight:700}.tf-note.good{color:var(--green)}.tf-note.bad{color:var(--red)}
+.completion{margin-top:19px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.completion-top{display:flex;align-items:center;gap:13px}.completion-mark{width:43px;height:43px;border-radius:14px;background:#e8f8ef;color:var(--green);display:grid;place-items:center;font-size:21px;font-weight:900}.completion h3{margin:0;font-size:17px}.completion p{margin:3px 0 0;color:var(--muted);font-size:12px}.score-row{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.score-chip{padding:8px 11px;background:#f5f7fb;border-radius:10px;font-size:11px;color:#586780;font-weight:750}.score-chip strong{color:var(--ink);margin-right:4px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:11px;padding:10px 15px;font-size:12px;font-weight:800;cursor:pointer;transition:.15s}.btn-primary{background:var(--blue);color:#fff;box-shadow:0 5px 12px rgba(56,103,232,.18)}.btn-primary:hover{background:#2e59d5;transform:translateY(-1px)}.btn-secondary{background:#f2f5fa;color:#4b5a74;border-color:#e8edf5}.btn-secondary:hover{background:#e9eef7}.btn-quiet{background:#fff;border-color:#e5eaf2;color:#66738b}.btn:disabled{opacity:.45;cursor:not-allowed}
+.empty-state{background:#fff;border:1px dashed #cfd8e8;border-radius:16px;padding:22px;text-align:center;color:var(--muted);font-size:13px}.empty-state strong{display:block;color:var(--ink);font-size:15px;margin-bottom:5px}
+.footer{text-align:center;color:#98a3b6;font-size:10px;padding:0 15px 24px}
+@media(max-width:1050px){.layout{grid-template-columns:238px minmax(0,1fr);gap:18px;padding-left:18px;padding-right:18px}.sidebar{padding:14px 10px}.hero{padding:24px}}
+@media(max-width:800px){.topbar{height:66px;padding:0 16px}.overall-wrap{min-width:130px}.top-right{gap:7px}.layout{display:block;padding:17px 15px 42px}.sidebar{display:none}.mobile-lessons{display:flex;gap:7px;overflow-x:auto;padding:0 0 13px;margin:0 0 3px;scrollbar-width:thin}.mobile-chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:11px;padding:8px 11px;color:#63718a;font-size:11px;font-weight:800;cursor:pointer}.mobile-chip.active{background:var(--blue);border-color:var(--blue);color:white}.hero{padding:22px 21px;border-radius:18px}.hero:after{right:-160px}.progress-card{margin:13px 0 17px}.question-card{padding:16px}.section-heading{margin-top:21px}}
+@media(max-width:560px){.brand-mark{width:37px;height:37px;border-radius:12px}.brand-kicker{font-size:8px}.brand-name{font-size:13px}.overall-wrap{min-width:95px}.overall-label{font-size:9px}.text-button{font-size:10px;padding:7px}.top-right{gap:2px}.layout{padding:13px 11px 34px}.hero{padding:20px 17px}.hero h1{font-size:23px}.hero p{font-size:12px}.hero-pill{font-size:10px}.progress-card{padding:13px}.progress-top strong{font-size:11px}.progress-detail{font-size:10px}.options{grid-template-columns:1fr;gap:7px}.option{min-height:45px;padding:10px}.option-text{font-size:12px}.question-card{padding:14px 13px;border-radius:14px}.q-prompt{font-size:13px}.tf-actions{margin-left:0}.tf-note{margin-left:0}.tf-choice{flex:1;min-width:0}.completion{padding:17px}.actions .btn{flex:1 1 100%}.section-heading span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Typography + touch improvements */
+body{font-size:16px;line-height:1.65}
+.brand-kicker{font-size:11px}.brand-name{font-size:17px}
+.overall-label{font-size:12px}
+.side-title{font-size:12px}.side-count{font-size:12px}
+.lesson-link{padding:11px 9px}.lesson-name{font-size:13px}.lesson-meta{font-size:11px}
+.side-bottom strong{font-size:14px}.side-bottom p{font-size:12px}
+.hero-eyebrow{font-size:11px}.hero p{font-size:15px}.hero-pill{font-size:12px;padding:7px 12px}
+.progress-top strong{font-size:14px}.progress-detail{font-size:13px}
+.section-heading h2{font-size:17px}.section-heading span{font-size:12px}
+.question-card{padding:22px 23px;margin-bottom:14px}
+.q-number{font-size:12px;min-width:30px;height:30px}.q-type{font-size:11px}
+.q-prompt{font-size:16px;line-height:1.7;margin-bottom:15px}
+.q-context{font-size:14px;line-height:1.7}
+.option{min-height:54px;padding:13px 14px;gap:12px}
+.option-letter{width:29px;height:29px;flex-basis:29px;font-size:13px}
+.option-text{font-size:14px;line-height:1.6}
+.answer-note{font-size:14px;padding:12px 14px}
+.tf-intro{font-size:14px;line-height:1.7;padding:15px 16px}
+.tf-intro strong{font-size:10px}
+.tf-row{padding:16px 0}
+.tf-letter{width:28px;height:28px;flex-basis:28px;font-size:13px}
+.tf-statement{font-size:14px;line-height:1.7}
+.tf-actions{gap:10px;margin-left:37px}
+.tf-choice{min-width:112px;min-height:44px;padding:10px 17px;font-size:13px}
+.tf-note{margin:10px 0 0 37px;font-size:13px}
+.completion{padding:25px}.completion h3{font-size:19px}.completion p{font-size:14px}
+.score-chip{font-size:13px;padding:10px 13px}.btn{min-height:44px;padding:11px 17px;font-size:13px}
+.empty-state{font-size:14px}.empty-state strong{font-size:16px}
+.footer{font-size:11px}
+@media(max-width:800px){
+  .topbar{height:auto;min-height:66px;padding:10px 16px;gap:12px;flex-wrap:wrap}
+  .top-right{gap:9px;flex:1;justify-content:flex-end;min-width:170px}
+  .overall-wrap{min-width:112px}
+  .overall-label{font-size:11px}
+  .text-button{font-size:12px;padding:9px 11px;min-height:40px}
+  .layout{padding:18px 16px 44px}
+  .mobile-lessons{gap:8px;padding:2px 0 14px;margin-bottom:5px}
+  .mobile-chip{font-size:13px;padding:10px 14px;min-height:42px}
+  .hero{padding:24px 23px}
+  .hero h1{font-size:clamp(24px,4vw,30px)}
+  .hero p{font-size:15px}
+  .hero-pill{font-size:12px}
+  .progress-card{padding:16px 18px}
+  .question-card{padding:20px}
+  .q-prompt{font-size:16px}
+  .options{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .option-text{font-size:14px}
+  .tf-statement,.tf-intro{font-size:14px}
+}
+@media(max-width:560px){
+  body{font-size:16px;line-height:1.65}
+  .topbar{padding:9px 12px;gap:8px}
+  .brand{gap:9px}
+  .brand-mark{width:39px;height:39px;border-radius:12px;font-size:20px}
+  .brand-kicker{font-size:9px;letter-spacing:.12em}
+  .brand-name{font-size:14px}
+  .top-right{gap:5px;min-width:155px}
+  .overall-wrap{min-width:98px}
+  .overall-label{font-size:10px;margin-bottom:5px}
+  .text-button{font-size:11px;padding:8px 9px;min-height:40px}
+  .layout{padding:13px 12px 34px}
+  .mobile-lessons{gap:7px;padding-bottom:12px}
+  .mobile-chip{font-size:13px;padding:10px 13px;min-height:44px;border-radius:12px}
+  .hero{padding:21px 18px;border-radius:17px}
+  .hero-eyebrow{font-size:10px}
+  .hero h1{font-size:24px;line-height:1.25;margin:9px 0}
+  .hero p{font-size:15px;line-height:1.6}
+  .hero-stats{gap:7px;margin-top:15px}
+  .hero-pill{font-size:11px;padding:7px 10px}
+  .progress-card{padding:14px 14px;margin:13px 0 18px}
+  .progress-top{align-items:flex-start;flex-direction:column;gap:3px;margin-bottom:9px}
+  .progress-top strong{font-size:14px}
+  .progress-detail{font-size:12px}
+  .section-heading{gap:9px;margin:21px 0 12px}
+  .section-icon{width:32px;height:32px;font-size:15px}
+  .section-heading h2{font-size:16px}
+  .section-heading span{font-size:11px}
+  .question-card{padding:17px 15px;border-radius:15px;margin-bottom:12px}
+  .q-top{gap:8px;margin-bottom:11px}
+  .q-number{height:29px;min-width:29px;font-size:12px}
+  .q-type{font-size:10px}
+  .q-prompt{font-size:16px;line-height:1.7;margin-bottom:14px}
+  .q-context{font-size:14px;line-height:1.7;padding:12px}
+  .options{grid-template-columns:1fr;gap:9px}
+  .option{min-height:54px;padding:12px 12px;gap:10px;border-radius:12px}
+  .option-letter{width:29px;height:29px;flex-basis:29px;font-size:13px}
+  .option-text{font-size:15px;line-height:1.55;padding-top:3px}
+  .answer-note{font-size:14px;line-height:1.6;padding:12px;margin-top:12px}
+  .tf-intro{font-size:14px;line-height:1.7;padding:13px}
+  .tf-row{padding:15px 0}
+  .tf-row-top{gap:9px}
+  .tf-letter{width:28px;height:28px;flex-basis:28px;font-size:13px}
+  .tf-statement{font-size:15px;line-height:1.7}
+  .tf-actions{margin:12px 0 0 0;gap:9px}
+  .tf-choice{flex:1;min-width:0;min-height:46px;padding:10px 12px;font-size:14px}
+  .tf-note{margin:10px 0 0;font-size:13px;line-height:1.5}
+  .completion{padding:17px}
+  .completion h3{font-size:17px}
+  .completion p{font-size:13px;line-height:1.6}
+  .score-chip{font-size:12px}
+  .actions{gap:8px}
+  .actions .btn{flex:1 1 100%;min-height:46px;font-size:13px}
+  .footer{font-size:10px;line-height:1.6}
+}
+@media(max-width:370px){
+  .brand-kicker{display:none}
+  .brand-name{font-size:13px}
+  .overall-wrap{min-width:88px}
+  .overall-label{font-size:9px}
+  .top-right{min-width:145px}
+  .layout{padding-left:10px;padding-right:10px}
+  .hero{padding:19px 15px}
+  .hero h1{font-size:22px}
+}
+
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">✦</div><div class="brand-text"><span class="brand-kicker">BỘ ĐỀ ÔN TẬP</span><span class="brand-name">Tin học · Bài 1–9</span></div></div>
+    <div class="top-right">
+      <div class="overall-wrap"><div class="overall-label"><span>Tiến độ tổng</span><strong id="overallText">0 / 84</strong></div><div class="track"><span id="overallBar"></span></div></div>
+      <button class="text-button" id="resetAll" type="button" title="Xóa toàn bộ tiến độ">Đặt lại</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="side-heading"><span class="side-title">NỘI DUNG ÔN TẬP</span><span class="side-count">09 BÀI</span></div>
+      <nav class="lesson-list" id="lessonList" aria-label="Chọn bài"></nav>
+      <div class="side-bottom"><strong id="sideProgress">0 / 84 câu đã làm</strong><p>Chọn một bài để bắt đầu ôn tập.</p><div class="track"><span id="sideBar"></span></div></div>
+    </aside>
+    <main class="main">
+      <nav class="mobile-lessons" id="mobileLessons" aria-label="Chọn bài"></nav>
+      <section class="hero" id="hero"></section>
+      <section class="progress-card">
+        <div class="progress-top"><strong>Tiến độ bài này</strong><span class="progress-detail" id="lessonProgressText">0 / 11 câu đã làm</span></div>
+        <div class="track"><span id="lessonProgressBar"></span></div>
+      </section>
+      <div id="quizContent"></div>
+      <div id="completionArea"></div>
+    </main>
+  </div>
+  <div class="footer">Nội dung câu hỏi và đáp án được lấy từ bộ dữ liệu ôn tập bạn cung cấp.</div>
+</div>
+<script>
+const DATA = {"bai":[{"so":1,"tieu_de":"Làm quen với AI","trac_nghiem":[{"cau":1,"cau_hoi":"Hội thảo được coi là điểm mốc ghi nhận sự ra đời của thuật ngữ AI được tổ chức vào năm nào?","A":"1950","B":"1952","C":"1954","D":"1956","dap_an":"D"},{"cau":2,"cau_hoi":"Robot hình người đầu tiên trên thế giới được tích hợp ứng dụng AI là","A":"Robot ChihiraAico","B":"Robot Asimo","C":"Robot QRIO","D":"Robot Tesla Bot","dap_an":"B"},{"cau":3,"cau_hoi":"Hệ chuyên gia MYCIN được bắt đầu phát triển tại đại học nào?","A":"Harvard (Mỹ)","B":"Cornell (Mỹ)","C":"Stanford (Mỹ)","D":"New York (Mỹ)","dap_an":"C"},{"cau":4,"cau_hoi":"Phần mềm nào dưới đây không phải là trợ lí ảo?","A":"Bixby","B":"Cortana","C":"Luxand","D":"Alexa","dap_an":"C"},{"cau":5,"cau_hoi":"Có thể chia AI thành mấy loại chính theo chức năng?","A":"2","B":"3","C":"4","D":"5","dap_an":"A"},{"cau":6,"cau_hoi":"Phương án nào không phải là đặc trưng của AI?","A":"Khả năng suy luận","B":"Khả năng cảm thụ văn học","C":"Khả năng giải quyết vấn đề","D":"Khả năng hiểu ngôn ngữ","dap_an":"B"},{"cau":7,"cau_hoi":"Phát biểu nào sau đây đúng?","A":"Chương trình máy tính chơi cờ là ví dụ của Trí tuệ nhân tạo mạnh","B":"Hệ chuyên gia MYCIN sử dụng các kĩ thuật Học máy để chẩn đoán bệnh","C":"Các hệ thống tự động hoá như dây chuyền lắp ráp, robot cơ giới hoá đều được coi là có ứng dụng AI","D":"Ngày nay, các nhạc sĩ có thể nhờ vào AI để sáng tác","dap_an":"D"}],"dung_sai":{"cau_dan":"Mục tiêu của việc phát triển ứng dụng AI là nhằm xây dựng các phần mềm giúp máy tính có được những năng lực trí tuệ như con người.","y":[{"y":"a","noi_dung":"Khả năng học là khả năng vận dụng logic và tri thức để đưa ra quyết định hoặc kết luận.","dap_an":"Sai"},{"y":"b","noi_dung":"Các dây chuyền lắp ráp là các hệ thống có ứng dụng AI.","dap_an":"Sai"},{"y":"c","noi_dung":"Trí tuệ nhân tạo tổng quát (mạnh) có khả năng tự học, tự thích nghi và thực hiện được nhiều công việc giống như con người.","dap_an":"Đúng"},{"y":"d","noi_dung":"Các máy tìm kiếm như Google, Bing có thể hiểu yêu cầu tra cứu của người dùng bằng văn bản hay tiếng nói.","dap_an":"Đúng"}]}},{"so":2,"tieu_de":"AI trong khoa học và đời sống","trac_nghiem":[{"cau":1,"cau_hoi":"Phần mềm IBM Watson for Oncology góp phần nâng cao hiệu quả điều trị bệnh gì?","A":"Bệnh ung thư","B":"Bệnh nhiễm trùng huyết","C":"Bệnh tim","D":"Bệnh tiểu đường","dap_an":"A"},{"cau":2,"cau_hoi":"Một thành tựu của xử lí ngôn ngữ tự nhiên và thị giác máy tính là","A":"Hệ thống phân tích dữ liệu","B":"Hệ thống lắp ráp tự động","C":"Hệ thống nhận dạng hình ảnh và video","D":"Hệ thống tưới tiêu tự động","dap_an":"C"},{"cau":3,"cau_hoi":"Sự phát triển của AI mang lại lợi ích như thế nào cho lĩnh vực giáo dục?","A":"Phát triển phương tiện tự lái, quản lí giao thông thông minh, định tuyến phương tiện vận tải","B":"Giúp nông dân tối ưu hoá quy trình chăm sóc vật nuôi và cây trồng","C":"Hỗ trợ tự động hoá cập nhật chứng từ, hoá đơn vào cơ sở dữ liệu của ngân hàng","D":"Phát triển các nền tảng học trực tuyến thông minh, có khả năng theo dõi tiến trình học tập","dap_an":"D"},{"cau":4,"cau_hoi":"Sự kết hợp IoT và AI (AIoT) giúp ích cho các nhà khoa học như thế nào?","A":"Hỗ trợ quyết định đầu tư, phát hiện và ngăn chặn gian lận trong tài chính, ngân hàng","B":"Cải thiện hiệu suất, hiệu quả của các lĩnh vực sản xuất","C":"Giúp giám sát môi trường tự nhiên và theo dõi tình hình biến đổi khí hậu","D":"Phát triển các nền tảng học trực tuyến thông minh","dap_an":"C"},{"cau":5,"cau_hoi":"Tên của một ứng dụng AI giúp xây dựng trải nghiệm giao tiếp tự nhiên là","A":"TensorFlow","B":"Dialogflow","C":"Rainbird","D":"Origami","dap_an":"B"},{"cau":6,"cau_hoi":"ChatGPT được phát triển bởi","A":"OpenAI","B":"Microsoft","C":"Google","D":"Apple","dap_an":"A"},{"cau":7,"cau_hoi":"Phát biểu nào sau đây đúng?","A":"Các thành tựu hiện tại của AI đều là Trí tuệ nhân tạo tổng quát","B":"ChatGPT có thể làm thơ, soạn nhạc, viết thư, thiết kế nhưng không thể sửa lỗi lập trình","C":"GPT-2 được huấn luyện trên hàng vạn văn bản thuộc nhiều lĩnh vực trên Internet","D":"Nhiều chuyên gia coi ChatGPT là bước đột phá trong lĩnh vực AI của năm 2022","dap_an":"D"}],"dung_sai":{"cau_dan":"Nhiều lĩnh vực khoa học, công nghệ và đời sống đã và đang nhận được rất nhiều lợi ích từ sự phát triển của AI.","y":[{"y":"a","noi_dung":"Các chuyên gia y tế khẳng định IBM Watson for Oncology đã góp phần nâng cao hiệu quả điều trị bệnh gan.","dap_an":"Sai"},{"y":"b","noi_dung":"AI tạo sinh tập trung xây dựng các thuật toán và mô hình có thể tạo nội dung (hình ảnh, âm thanh, văn bản) một cách tự động.","dap_an":"Đúng"},{"y":"c","noi_dung":"AI có khả năng tự động hoá nhiều công việc, điều này làm tăng mối lo ngại về quyền riêng tư có khả năng bị lạm dụng.","dap_an":"Đúng"},{"y":"d","noi_dung":"Trong lĩnh vực khoa học xã hội và nhân văn, AI được sử dụng để mô phỏng và mô hình hoá nhiều hiện tượng xã hội và nhân học.","dap_an":"Đúng"}]}},{"so":3,"tieu_de":"Thiết bị mạng thông dụng","trac_nghiem":[{"cau":1,"cau_hoi":"Điểm khác nhau của switch và hub là gì?","A":"Hình dạng","B":"Số cổng","C":"Cách thức hoạt động","D":"Màu sắc","dap_an":"C"},{"cau":2,"cau_hoi":"Wi-Fi sử dụng loại sóng nào để truyền dữ liệu?","A":"Sóng điện từ","B":"Sóng vô tuyến điện","C":"Sóng ánh sáng","D":"Sóng mang","dap_an":"B"},{"cau":3,"cau_hoi":"Khi kết nối hai máy tính qua Internet, người ta dùng thiết bị nào để kết nối các LAN với nhau?","A":"Hub","B":"Wireless Access Point","C":"Switch","D":"Router","dap_an":"D"},{"cau":4,"cau_hoi":"Loại modem nào cho phép nối hai máy tính qua hệ thống chuyển mạch của mạng điện thoại công cộng?","A":"Modem quay số","B":"Modem GSM 3G, 4G, 5G","C":"Modem ADSL","D":"Modem quang","dap_an":"A"},{"cau":5,"cau_hoi":"Wireless Access Point (WAP) có chức năng gì?","A":"Chuyển đổi tín hiệu số sang tương tự và ngược lại, thường dùng khi kết nối LAN với Internet","B":"Kết nối các máy tính trong cùng LAN trực tiếp qua cáp mạng","C":"Kết nối các thiết bị đầu cuối qua sóng Wi-Fi, giảm chi phí thiết lập LAN hoặc mở rộng phạm vi của LAN","D":"Dẫn đường cho dữ liệu khi kết nối trên mạng diện rộng như Internet","dap_an":"C"}],"dung_sai":{"cau_dan":"Máy tính (kể cả thiết bị di động) có thể kết nối vào mạng bằng cáp tín hiệu hoặc qua sóng Wi-Fi.","y":[{"y":"a","noi_dung":"Wi-Fi là chữ viết tắt của cụm từ Wireless Fidelity.","dap_an":"Đúng"},{"y":"b","noi_dung":"Hầu hết các máy tính để bàn đều có sẵn khả năng kết nối Wi-Fi như máy tính xách tay hay điện thoại thông minh.","dap_an":"Sai"},{"y":"c","noi_dung":"Để máy tính trong LAN giao tiếp được với Internet thì chỉ cần cắm cáp mạng UTP vào cổng RJ45 của máy tính.","dap_an":"Sai"},{"y":"d","noi_dung":"Muốn kết nối thiết bị di động vào LAN bằng trạm thu phát Wi-Fi được bảo mật, cần gõ đúng mật khẩu của trạm đó.","dap_an":"Đúng"}]}},{"so":4,"tieu_de":"Giao thức mạng","trac_nghiem":[{"cau":1,"cau_hoi":"Các quy định liên quan đến gửi thư có tên là gì?","A":"Giao thức IMAP","B":"Giao thức MQTT","C":"Giao thức SMTP","D":"Giao thức POP3","dap_an":"C"},{"cau":2,"cau_hoi":"Việc truyền dữ liệu trong mạng cục bộ sẽ căn cứ vào địa chỉ gì?","A":"Địa chỉ IP","B":"Địa chỉ MAC","C":"Địa chỉ LAN","D":"Địa chỉ Server","dap_an":"B"},{"cau":3,"cau_hoi":"Việc trao đổi dữ liệu giữa các máy tính trong mạng cục bộ tuân thủ theo giao thức nào?","A":"HTTPS","B":"TCP/IP","C":"DNS","D":"Ethernet","dap_an":"D"},{"cau":4,"cau_hoi":"Phát biểu nào sau đây sai?","A":"Theo phương pháp định tuyến tĩnh, mỗi router có một bảng định tuyến","B":"Giao thức TCP đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả","C":"MAC là địa chỉ vật lí của máy tính","D":"Giao thức IP đảm bảo chuyển dữ liệu từ mạng này đến mạng kia và đến một ứng dụng cụ thể trên một máy cụ thể","dap_an":"D"},{"cau":5,"cau_hoi":"Địa chỉ IP 11001011 10100010 00101001 11111110 dưới dạng thập phân là","A":"203.162.41.254","B":"230.178.52.166","C":"203.126.71.235","D":"235.197.80.255","dap_an":"A"}],"dung_sai":{"cau_dan":"Hai giao thức IP và TCP xác định cách thức kết nối và trao đổi dữ liệu có tính đặc thù của Internet.","y":[{"y":"a","noi_dung":"Địa chỉ IP giống với địa chỉ MAC.","dap_an":"Sai"},{"y":"b","noi_dung":"Mỗi địa chỉ IP là một số 4 bit.","dap_an":"Sai"},{"y":"c","noi_dung":"Giao thức TCP chỉ đảm bảo chuyển dữ liệu từ mạng này đến mạng kia mà không đảm bảo đến một ứng dụng cụ thể trên một máy cụ thể.","dap_an":"Sai"},{"y":"d","noi_dung":"Việc tách dữ liệu thành nhiều gói cho phép nhiều cuộc truyền được thực hiện xen kẽ trên cùng một đường truyền vật lí, giúp tận dụng đường truyền.","dap_an":"Đúng"}]}},{"so":5,"tieu_de":"Thực hành chia sẻ tài nguyên trên mạng","trac_nghiem":[{"cau":1,"cau_hoi":"Phát biểu nào sau đây sai?","A":"Tường lửa không ngăn chặn việc truy cập tài nguyên nếu người sử dụng được đánh giá là đáng tin cậy.","B":"Ở Windows 10 và 11, tường lửa Defender mặc định được kích hoạt.","C":"Windows thiết lập sẵn ở mỗi máy tính trong thư mục Public thư mục con Public Networks.","D":"Dữ liệu trong thư mục Public được mặc định là không chia sẻ.","dap_an":"C"},{"cau":2,"cau_hoi":"Giao diện thiết lập chia sẻ thư mục không có mục nào sau đây?","A":"Advanced Sharing.","B":"Firewall Network Protection.","C":"Password Protection.","D":"Network File and Folder Sharing.","dap_an":"B"},{"cau":3,"cau_hoi":"Sau khi chọn được máy in để chia sẻ, em cần chọn mục nào để mở cửa sổ thiết lập chia sẻ?","A":"Printer properties.","B":"Printing preferences.","C":"Open print queue.","D":"Printer preferences.","dap_an":"A"},{"cau":4,"cau_hoi":"Ở giao diện Private network, em cần làm gì để dừng tạm thời tường lửa?","A":"Kéo con trượt của Windows Security về trạng thái Off.","B":"Kéo con trượt của Firewall Network Protection về trạng thái On.","C":"Kéo con trượt của Microsoft Defender Firewall về trạng thái Off.","D":"Kéo con trượt của Network File and Folder Sharing về trạng thái Off.","dap_an":"C"}],"dung_sai":{"cau_dan":"Việc chia sẻ tài nguyên trên mạng có thể gây rủi ro như dữ liệu có thể bị truy cập với mục đích xấu hay bị làm hỏng bởi một người dùng trên mạng.","y":[{"y":"a","noi_dung":"Mạng công cộng thường được thiết lập ở những địa điểm công cộng như nhà ga, sân bay, quán cà phê,...","dap_an":"Đúng"},{"y":"b","noi_dung":"Để hai máy tính có thể chia sẻ tài nguyên qua mạng cục bộ thì người người chia sẻ và được chia sẻ phải \"kết bạn\" với nhau.","dap_an":"Sai"},{"y":"c","noi_dung":"Khi một người dùng được thêm vào danh sách người được chia sẻ thư mục thì mặc định có quyền Write.","dap_an":"Sai"},{"y":"d","noi_dung":"Để thiết lập chế độ chia sẻ nâng cao, cần truy cập chức năng Advanced Sharing Settings từ Control Panel.","dap_an":"Đúng"}]}},{"so":6,"tieu_de":"Giao tiếp và ứng xử trong không gian mạng","trac_nghiem":[{"cau":1,"cau_hoi":"Giao tiếp trong không gian mạng giúp mở rộng kết nối xã hội như thế nào?","A":"Không gian mạng cung cấp nhiều công cụ giao tiếp trực tuyến như hội nghị truyền hình, nhắn tin nhanh, thư điện tử, mạng xã hội, ...","B":"Những người sống xa nhau có thể giao tiếp với nhau mọi lúc, mọi nơi, miễn là có kết nối mạng.","C":"Điện thoại video giúp con người gần nhau hơn khi không có điều kiện sống cùng nhau.","D":"Giúp xây dựng thương hiệu cá nhân hoặc doanh nghiệp bằng cách thông qua các kênh truyền thông xã hội, tạo ấn tượng tốt để thu hút khách hàng và bạn bè.","dap_an":"D"},{"cau":2,"cau_hoi":"Vì sao lại nói giao tiếp trong không gian mạng ẩn chứa nhiều nguy cơ về bảo mật và quyền riêng tư?","A":"Trong không gian mạng, người sử dụng có thể dễ dàng giấu mặt, tạo ra các bản sao không đầy đủ của bản thân hoặc giả mạo thông tin, làm cho người khác khó đánh giá được tính chân thật của thông tin và sự thật về người đối diện.","B":"Mất kết nối mạng dẫn đến giao tiếp bị trì hoãn hoặc bị gián đoạn.","C":"Dữ liệu bị xâm phạm khiến các thông tin riêng tư và nhạy cảm bị rò rỉ hoặc bị tấn công bởi những kẻ xấu.","D":"Thư điện tử hay tin nhắn có thể gây khó khăn trong việc truyền đạt cảm xúc và dẫn đến những hiểu lầm không đáng có.","dap_an":"C"},{"cau":3,"cau_hoi":"\"Chia sẻ thông tin chính xác và đáng tin cậy, tránh lan truyền thông tin sai lệch hoặc tin đồn\" thể hiện khía cạnh nào trong việc ứng xử nhân văn trong không gian mạng?","A":"Lịch sự.","B":"Thấu hiểu.","C":"Tôn trọng.","D":"Hỗ trợ.","dap_an":"A"},{"cau":4,"cau_hoi":"Em cần làm gì để hình thành thói quen ứng xử nhân văn trong không gian mạng?","A":"Đối xử với người khác theo cách mà mình muốn.","B":"Tự kiểm điểm, cải thiện hành vi trực tuyến của mình.","C":"Làm theo ý muốn cá nhân, không tôn trọng ý kiến của người khác.","D":"Sử dụng ngôn từ và cách viết tuỳ hứng.","dap_an":"B"},{"cau":5,"cau_hoi":"Khi tham một cuộc thảo luận trên mạng xã hội, em cần ứng xử như thế nào?","A":"Tự ý trao đổi thông tin riêng tư trong thư điện tử giữa hai người với bên thứ ba.","B":"Mặc quần áo lịch sự và không để lộ những vật dụng hoặc cảnh quan không phù hợp.","C":"Sử dụng ngôn từ khiêu khích khi không đồng tình với ý kiến của người khác.","D":"Nếu có ý kiến trái ngược, cần trao đổi một cách lịch sự trên tinh thần tôn trọng quan điểm của người khác.","dap_an":"D"}],"dung_sai":{"cau_dan":"Trong bối cảnh hội nhập toàn cầu hiện nay, sự bùng nổ của công nghệ thông tin và truyền thông đã góp phần thay đổi phương thức giao tiếp trong xã hội.","y":[{"y":"a","noi_dung":"Không gian mạng cho phép con người giao tiếp với nhau thông qua các phần mềm và dịch vụ giao tiếp trực tuyến như mạng xã hội, thư giấy, ứng dụng nhắn tin, gọi điện thoại video,...","dap_an":"Sai"},{"y":"b","noi_dung":"Giao tiếp trực tuyến có thể được thực hiện mọi nơi, mọi lúc, miễn là có kết nối mạng.","dap_an":"Đúng"},{"y":"c","noi_dung":"Giao tiếp trong không gian mạng có thể gây khó khăn trong việc truyền đạt cảm xúc và dẫn đến những hiểu lầm không đáng có.","dap_an":"Đúng"},{"y":"d","noi_dung":"\"Tránh gửi nội dung thư rác hoặc quảng cáo không liên quan đến nội dung chính của cuộc trò chuyện\" thể hiện khía cạnh tôn trọng trong việc ứng xử nhân văn trong không gian mạng.","dap_an":"Sai"}]}},{"so":7,"tieu_de":"HTML và cấu trúc trang web","trac_nghiem":[{"cau":1,"cau_hoi":"Trên trang HTML, thẻ p có ý nghĩa gì?","A":"Đoạn văn bản.","B":"Tiêu đề trang web.","C":"Tiêu đề văn bản.","D":"Một câu trích dẫn ngắn.","dap_an":"A"},{"cau":2,"cau_hoi":"Phát biểu nào sau đây sai?","A":"Một phần tử HTML được định nghĩa bởi thẻ bắt đầu, thẻ kết thúc và phần nội dung nằm giữa cặp thẻ này.","B":"Dòng đầu tiên của mỗi tệp HTML có dạng \u003c!DOCTYPE html> có vai trò thông báo kiểu của tệp là html và được xem là phần tử HTML.","C":"\u003cbr> là thẻ đơn.","D":"HTML không nhận biết kí tự xuống dòng (nhấn phím Enter) để kết thúc đoạn văn bản như các phần mềm soạn thảo văn bản thông thường.","dap_an":"B"},{"cau":3,"cau_hoi":"Em sử dụng thẻ nào sau đây để chèn dòng kẻ ngang vào trang HTML?","A":"\u003cbr/>.","B":"\u003chr/>.","C":"\u003cqr/>.","D":"\u003cdr/>.","dap_an":"B"},{"cau":4,"cau_hoi":"Đoạn mã HTML của câu \"The RMS Titanic, a luxury steamship, sank on April 15, 1912 after striking an iceberg.\" là","A":"\u003cp>The \u003cb>RMS Titanic\u003c/b>, a luxury steamship, sank on \u003ci>April 15, 1912\u003c/i> after striking an iceberg.\u003c/p>.","B":"\u003cp>The \u003ci>RMS Titanic\u003c/i>, a luxury steamship, sank on \u003cu>April 15, 1912\u003c/u> after striking an iceberg.\u003c/p>.","C":"\u003cp>The \u003cu>RMS Titanic\u003c/u>, a luxury steamship, sank on \u003cb>April 15, 1912\u003c/b> after striking an iceberg.\u003c/p>.","D":"\u003cp>The \u003ci>RMS Titanic\u003c/i>, a luxury steamship, sank on \u003cb>April 15, 1912\u003c/b> after striking an iceberg.\u003c/p>.","dap_an":"D"},{"cau":5,"cau_hoi":"Để phần mềm Notepad++ hiển thị và hỗ trợ soạn thảo HTML em cần thực hiện lệnh gì?","A":"View -> Syntax -> HTML.","B":"View -> H -> HTML.","C":"Language -> H -> HTML.","D":"Language -> Syntax -> HTML.","dap_an":"C"}],"dung_sai":{"cau_dan":"Mỗi tệp HTML bao gồm nhiều phần tử HTML, các phần tử HTML có thể lồng nhau.","y":[{"y":"a","noi_dung":"Phần tử \u003cmeta> nằm trong phần tử \u003cbody> và được dùng để mô tả các thông tin bổ sung của trang web như cách mã hoá Unicode, từ khoá dùng để tìm kiếm trang, tên tác giả trang web.","dap_an":"Sai"},{"y":"b","noi_dung":"Trong sơ đồ hình cây HTML, phần tử \u003chtml> là phần tử gốc (root).","dap_an":"Đúng"},{"y":"c","noi_dung":"Nhóm các thẻ định dạng văn bản thường dùng là các thẻ tiêu đề theo thứ tự tăng cấp dần là \u003ch1>, \u003ch2>, \u003ch3>, \u003ch4>, \u003ch5>, \u003ch6>.","dap_an":"Sai"},{"y":"d","noi_dung":"Phần tử \u003ctitle> nằm trong phần tử \u003chead> và được dùng để mô tả tên của trang web.","dap_an":"Đúng"}]}},{"so":8,"tieu_de":"Định dạng văn bản","trac_nghiem":[{"cau":1,"cau_hoi":"Thuộc tính nào dùng để thiết lập định dạng văn bản như chọn màu sắc, phông chữ, cỡ chữ, kiểu chữ, căn lề, tạo khung,... cho một phần tử HTML?","A":"format.","B":"style.","C":"design.","D":"set.","dap_an":"B"},{"cau":2,"cau_hoi":"Để định dạng kiểu chữ đậm và chữ màu đỏ cho tiêu đề \"Lịch sử phát triển HTML\", em cần viết mã HTML như thế nào?","A":"\u003ch1 style=\"color:red\">\u003cem>Lịch sử phát triển của HTML\u003c/em>\u003c/h1>.","B":"\u003ch1 style=\"color:rgb(205, 0, 0)\">\u003cb>Lịch sử phát triển của HTML\u003c/b>\u003c/h1>.","C":"\u003cp style=\"color:red\">\u003cstrong>Lịch sử phát triển của HTML\u003c/strong>\u003c/p>.","D":"\u003ch1 style=\"color:red\">\u003cstrong>Lịch sử phát triển của HTML\u003c/strong>\u003c/h1>.","dap_an":"D"},{"cau":3,"cau_hoi":"Để giảm cỡ chữ, em sử dụng thẻ nào trong HTML5?","A":"\u003csmall>.","B":"\u003cdownsize>.","C":"\u003csup>.","D":"\u003cfigure>.","dap_an":"A"},{"cau":4,"cau_hoi":"Đoạn mã nào sau đây được dùng để hiển thị công thức H2SO4?","A":"\u003cp>H\u003csup>2\u003c/sup>SO\u003csup>4\u003c/sup>\u003c/p>.","B":"\u003cp>H\u003csmall>2\u003c/small>SO\u003csmall>4\u003c/small>\u003c/p>.","C":"\u003cp>H\u003csub>2\u003c/sub>SO\u003csub>4\u003c/sub>\u003c/p>.","D":"\u003cp>H\u003cdown>2\u003c/down>SO\u003cdown>4\u003c/down>\u003c/p>.","dap_an":"C"},{"cau":5,"cau_hoi":"HTML5 không hỗ trợ thẻ nào sau đây?","A":"\u003cem>.","B":"\u003cu>.","C":"\u003cstrong>.","D":"\u003cdel>.","dap_an":"B"}],"dung_sai":{"cau_dan":"Thuộc tính của thẻ có tác dụng bổ sung thông tin, làm rõ các điều khiển của thẻ chỉ định.","y":[{"y":"a","noi_dung":"Mỗi thẻ HTML đều phải có thuộc tính.","dap_an":"Sai"},{"y":"b","noi_dung":"Cú pháp để xác định thuộc tính: tên_thuộc_tính=\"giá trị\".","dap_an":"Đúng"},{"y":"c","noi_dung":"Thuộc tính có thể nằm trong thẻ kết thúc.","dap_an":"Sai"},{"y":"d","noi_dung":"Trong trường hợp thẻ có nhiều hơn một thuộc tính thì các thuộc tính được ngăn cách bởi dấu cách.","dap_an":"Đúng"}]}},{"so":9,"tieu_de":"Tạo danh sách, bảng","trac_nghiem":[{"cau":1,"cau_hoi":"Thẻ HTML dùng để tạo các ô dữ liệu trong bảng là","A":"\u003ctd>.","B":"\u003cth>.","C":"\u003ctable>.","D":"\u003ctr>.","dap_an":"A"},{"cau":2,"cau_hoi":"Khi tạo danh sách, thuộc tính type được dùng để làm gì?","A":"Xác định giá trị bắt đầu đánh số, nhận giá trị là các số nguyên.","B":"Xác định kiểu danh sách.","C":"Xác định kiểu kí tự đầu dòng.","D":"Xác định kiểu đánh số, các kiểu đánh số là \"1\", \"A\", \"a\", \"I\" và \"i\".","dap_an":"D"},{"cau":3,"cau_hoi":"Khi định dạng tạo khung bảng, thuộc tính nhỏ kiểu_viền của thuộc tính con border trong thuộc tính style không nhận giá trị nào sau đây?","A":"None.","B":"Dotted.","C":"Shadow.","D":"Solid.","dap_an":"C"},{"cau":4,"cau_hoi":"Cặp thẻ nào trong HTML dùng để tạo danh sách có thứ tự?","A":"\u003cul>\u003c/ul>.","B":"\u003cil>\u003c/il>.","C":"\u003col>\u003c/ol>.","D":"\u003cal>\u003c/al>.","dap_an":"C"},{"cau":5,"cau_hoi":"Để gộp ô trên cột, em sử dụng thuộc tính nào?","A":"rowspan.","B":"colspan.","C":"colframe.","D":"rowsize.","dap_an":"B"}],"dung_sai":{"cau_dan":"Sử dụng danh sách và bảng sẽ giúp văn bản được trình bày khoa học hơn.","y":[{"y":"a","noi_dung":"Có hai dạng danh sách trong HTML là danh sách có thứ tự và danh sách không có thứ tự.","dap_an":"Sai"},{"y":"b","noi_dung":"Để chọn kí tự đầu dòng, ta thiết lập giá trị của đặc tính list-style-type trong thuộc tính style bằng một trong 4 giá trị disc, circle, square và none.","dap_an":"Đúng"},{"y":"c","noi_dung":"Để thêm tiêu đề cho bảng, ta sử dụng thẻ \u003ccaption>, ngay trước thẻ \u003ctable>.","dap_an":"Sai"},{"y":"d","noi_dung":"Sử dụng thuộc tính con width và height của thuộc tính style để điều chỉnh kích thước của bảng.","dap_an":"Đúng"}]}}]};
+const $ = (selector) => document.querySelector(selector);
+const state = {
+  lessonIndex: 0,
+  answers: DATA.bai.map(() => ({})),
+  view: 'lesson',
+  retryItems: [],
+  retryAnswers: {}
+};
+const LETTERS = ['A','B','C','D'];
+const TOTAL = DATA.bai.reduce((sum, lesson) => sum + lesson.trac_nghiem.length + lesson.dung_sai.y.length, 0);
+const escapeText = (value) => String(value ?? '');
+function node(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) el.className = className;
+  if (text !== undefined && text !== null) el.textContent = text;
+  return el;
+}
+function button(text, className, onClick, disabled=false) {
+  const el = node('button', className, text);
+  el.type = 'button';
+  el.disabled = disabled;
+  if (onClick) el.addEventListener('click', onClick);
+  return el;
+}
+function lessonTotal(lesson) { return lesson.trac_nghiem.length + lesson.dung_sai.y.length; }
+function lessonAnswerMap(index) { return state.answers[index]; }
+function lessonCounts(index) {
+  const lesson = DATA.bai[index], map = lessonAnswerMap(index);
+  const total = lessonTotal(lesson);
+  const entries = Object.values(map);
+  return { total, answered: entries.length, correct: entries.filter(x => x.correct).length };
+}
+function overallCounts() {
+  let answered=0, correct=0;
+  DATA.bai.forEach((_,i) => { const c=lessonCounts(i); answered+=c.answered; correct+=c.correct; });
+  return {answered,correct,total:TOTAL};
+}
+function refreshOverall() {
+  const c=overallCounts(), pct=c.total ? c.answered/c.total*100 : 0;
+  $('#overallText').textContent=`${c.answered} / ${c.total}`;
+  $('#overallBar').style.width=`${pct}%`;
+  $('#sideProgress').textContent=`${c.answered} / ${c.total} câu đã làm`;
+  $('#sideBar').style.width=`${pct}%`;
+  renderNav();
+}
+function renderNav() {
+  const desktop=$('#lessonList'), mobile=$('#mobileLessons');
+  desktop.replaceChildren(); mobile.replaceChildren();
+  DATA.bai.forEach((lesson,index)=>{
+    const c=lessonCounts(index), pct=c.total ? c.answered/c.total*100 : 0;
+    const item=button('',`lesson-link ${index===state.lessonIndex?'active':''}`,()=>selectLesson(index));
+    const num=node('span','lesson-num',String(lesson.so).padStart(2,'0'));
+    const copy=node('span','lesson-copy');
+    copy.append(node('span','lesson-name',lesson.tieu_de),node('span','lesson-meta',`${c.answered}/${c.total} câu đã làm`));
+    item.append(num,copy);
+    if(c.answered===c.total && c.total>0) item.append(node('span','lesson-tick','✓'));
+    desktop.append(item);
+    const chip=button(`Bài ${lesson.so}`,`mobile-chip ${index===state.lessonIndex?'active':''}`,()=>selectLesson(index));
+    mobile.append(chip);
+  });
+}
+function selectLesson(index) {
+  state.lessonIndex=index; state.view='lesson'; state.retryItems=[]; state.retryAnswers={};
+  render(); window.scrollTo({top:0,behavior:'smooth'});
+}
+function makeHero() {
+  const lesson=DATA.bai[state.lessonIndex], c=lessonCounts(state.lessonIndex);
+  $('#hero').replaceChildren();
+  const content=node('div','hero-content');
+  content.append(node('div','hero-eyebrow',`CHỦ ĐỀ ${String(lesson.so).padStart(2,'0')} · ÔN TẬP TIN HỌC`));
+  content.append(node('h1','',lesson.tieu_de));
+  content.append(node('p','', 'Chọn đáp án cho từng câu hỏi. Kết quả đúng/sai sẽ xuất hiện ngay sau khi bạn trả lời.'));
+  const pills=node('div','hero-stats');
+  pills.append(node('span','hero-pill',`${lesson.trac_nghiem.length} câu trắc nghiệm`),node('span','hero-pill',`${lesson.dung_sai.y.length} ý đúng / sai`),node('span','hero-pill',`${c.total} lượt trả lời`));
+  content.append(pills); $('#hero').append(content);
+}
+function setLessonProgress() {
+  const c=lessonCounts(state.lessonIndex), pct=c.total?c.answered/c.total*100:0;
+  $('#lessonProgressText').textContent=`${c.answered} / ${c.total} câu đã làm`;
+  $('#lessonProgressBar').style.width=`${pct}%`;
+}
+function answerNote(correct, correctText) {
+  const box=node('div',`answer-note ${correct?'good':'bad'}`);
+  box.append(node('span','answer-icon',correct?'✓':'!'));
+  box.append(node('span','',correct?'Chính xác!':`Chưa chính xác. Đáp án đúng: ${correctText}`));
+  return box;
+}
+function renderMultipleChoice(question, questionIndex, mode='lesson', retryKey=null) {
+  const card=node('article','question-card');
+  const map=mode==='lesson'?lessonAnswerMap(state.lessonIndex):state.retryAnswers;
+  const key=mode==='lesson'?`mc:${questionIndex}`:retryKey;
+  const saved=map[key];
+  const top=node('div','q-top');
+  top.append(node('span','q-number',`C${question.cau ?? questionIndex+1}`),node('span','q-type','Trắc nghiệm'));
+  card.append(top,node('p','q-prompt',question.cau_hoi));
+  const options=node('div','options');
+  LETTERS.forEach(letter=>{
+    const choice=button('',`option ${saved && letter===question.dap_an?'correct':''}${saved && saved.selected===letter && !saved.correct?' wrong':''}`,()=>{
+      if(map[key]) return;
+      map[key]={selected:letter,correct:letter===question.dap_an};
+      rerenderKeepingPosition();
+    },!!saved);
+    choice.append(node('span','option-letter',letter),node('span','option-text',escapeText(question[letter])));
+    if(saved && letter===question.dap_an) choice.classList.add('correct');
+    if(saved && saved.selected===letter && !saved.correct) choice.classList.add('wrong');
+    options.append(choice);
+  });
+  card.append(options);
+  if(saved) card.append(answerNote(saved.correct,`${question.dap_an}. ${question[question.dap_an]}`));
+  return card;
+}
+function renderTrueFalseRow(statement, index, mode='lesson', retryKey=null) {
+  const wrap=node('div','tf-row');
+  const map=mode==='lesson'?lessonAnswerMap(state.lessonIndex):state.retryAnswers;
+  const key=mode==='lesson'?`tf:${index}`:retryKey;
+  const saved=map[key];
+  const expected=String(statement.dap_an).toLowerCase()==='đúng';
+  const line=node('div','tf-row-top');
+  line.append(node('span','tf-letter',statement.y || String.fromCharCode(97+index)),node('div','tf-statement',statement.noi_dung));
+  wrap.append(line);
+  const controls=node('div','tf-actions');
+  [true,false].forEach(value=>{
+    const label=value?'Đúng':'Sai';
+    const isCorrect=value===expected;
+    const selected=saved && saved.selected===value;
+    let cls='tf-choice';
+    if(saved && isCorrect) cls+=' correct-answer';
+    if(saved && selected && !saved.correct) cls+=' selected-wrong';
+    if(saved && selected && saved.correct) cls+=' selected-correct';
+    controls.append(button(label,cls,()=>{
+      if(map[key]) return;
+      map[key]={selected:value,correct:isCorrect};
+      rerenderKeepingPosition();
+    },!!saved));
+  });
+  wrap.append(controls);
+  if(saved){
+    const note=node('div',`tf-note ${saved.correct?'good':'bad'}`,saved.correct?'✓ Chính xác!':`✕ Chưa đúng. Đáp án: ${expected?'Đúng':'Sai'}.`);
+    wrap.append(note);
+  }
+  return wrap;
+}
+function renderTrueFalseGroup(lesson, mode='lesson', retryItem=null) {
+  const card=node('article','question-card');
+  const top=node('div','q-top');
+  top.append(node('span','q-number',mode==='lesson'?'Đ/S':'ÔN'),node('span','q-type','Đúng / Sai'));
+  card.append(top);
+  if(mode==='lesson'){
+    const intro=node('div','tf-intro'); intro.append(node('strong','','Câu dẫn'),node('span','',lesson.dung_sai.cau_dan)); card.append(intro);
+    lesson.dung_sai.y.forEach((statement,index)=>card.append(renderTrueFalseRow(statement,index,'lesson')));
+  }else{
+    const intro=node('div','tf-intro'); intro.append(node('strong','','Câu dẫn'),node('span','',retryItem.cauDan || '')); card.append(intro);
+    const statement={...retryItem.statement,y:retryItem.statement.y};
+    card.append(renderTrueFalseRow(statement,retryItem.yIndex,'retry',retryItem.key));
+  }
+  return card;
+}
+function buildWrongItems(index) {
+  const lesson=DATA.bai[index], map=lessonAnswerMap(index), items=[];
+  lesson.trac_nghiem.forEach((q,i)=>{const saved=map[`mc:${i}`];if(saved && !saved.correct)items.push({type:'mc',key:`retry-mc:${i}`,question:q,questionIndex:i});});
+  lesson.dung_sai.y.forEach((statement,i)=>{const saved=map[`tf:${i}`];if(saved && !saved.correct)items.push({type:'tf',key:`retry-tf:${i}`,statement,yIndex:i,cauDan:lesson.dung_sai.cau_dan});});
+  return items;
+}
+function buildRetryFromRemaining() {
+  state.retryItems=state.retryItems.filter(item=>!state.retryAnswers[item.key]?.correct);
+  state.retryAnswers={};
+  if(!state.retryItems.length){state.view='retryDone';}
+}
+function renderCompletion({retry=false}={}) {
+  const area=$('#completionArea'); area.replaceChildren();
+  const lesson=DATA.bai[state.lessonIndex];
+  if(retry){
+    const total=state.retryItems.length, map=state.retryAnswers;
+    const answered=Object.keys(map).length, correct=Object.values(map).filter(x=>x.correct).length;
+    if(answered<total) return;
+    const wrong=state.retryItems.filter(item=>!map[item.key]?.correct).length;
+    const box=node('section','completion');
+    const head=node('div','completion-top'); head.append(node('div','completion-mark',wrong?'↻':'✓'));
+    const title=node('div'); title.append(node('h3','',wrong?'Vẫn còn một vài câu cần ôn':'Bạn đã ôn đúng toàn bộ!'),node('p','',wrong?`Bạn đã làm đúng ${correct}/${total}. Có ${wrong} câu/ý cần thử lại.`:'Phần câu hỏi đã sai ở lượt trước đã được hoàn thành.')); head.append(title);box.append(head);
+    const scores=node('div','score-row');scores.append(node('span','score-chip',`${correct}/${total} trả lời đúng`),node('span','score-chip',`${wrong} câu/ý còn sai`));box.append(scores);
+    const actions=node('div','actions');
+    if(wrong) actions.append(button('Ôn lại câu/ý còn sai','btn btn-primary',()=>{buildRetryFromRemaining();render();window.scrollTo({top:0,behavior:'smooth'});}));
+    actions.append(button('Quay lại bài học','btn btn-secondary',()=>{state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});}));
+    actions.append(button('Làm lại bài này','btn btn-quiet',()=>restartLesson()));box.append(actions);area.append(box);return;
+  }
+  const counts=lessonCounts(state.lessonIndex);
+  if(counts.answered<counts.total)return;
+  const wrong=buildWrongItems(state.lessonIndex);
+  const box=node('section','completion');
+  const head=node('div','completion-top');head.append(node('div','completion-mark',wrong.length?'✓':'★'));
+  const title=node('div');title.append(node('h3','',wrong.length?'Đã hoàn thành bài học!':'Xuất sắc! Bạn đã đúng tất cả.'),node('p','',wrong.length?`Bạn đã trả lời đúng ${counts.correct}/${counts.total}. Hãy ôn thêm những câu/ý chưa đúng nhé.`:'Bạn đã hoàn thành bài này mà không có câu trả lời sai.'));head.append(title);box.append(head);
+  const scores=node('div','score-row');scores.append(node('span','score-chip',`${counts.correct}/${counts.total} trả lời đúng`),node('span','score-chip',`${wrong.length} câu/ý cần ôn`));box.append(scores);
+  const actions=node('div','actions');
+  if(wrong.length)actions.append(button(`Làm lại ${wrong.length} câu/ý sai`,'btn btn-primary',()=>startRetry(wrong)));
+  actions.append(button('Làm lại bài này','btn btn-secondary',()=>restartLesson()));
+  if(state.lessonIndex<DATA.bai.length-1)actions.append(button('Sang bài tiếp theo →','btn btn-quiet',()=>selectLesson(state.lessonIndex+1)));
+  box.append(actions);area.append(box);
+}
+function startRetry(items) {
+  state.view='retry';state.retryItems=items.map(item=>({...item}));state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+}
+function restartLesson() {
+  state.answers[state.lessonIndex]={};state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+}
+function renderRetry() {
+  const lesson=DATA.bai[state.lessonIndex], content=$('#quizContent');content.replaceChildren();
+  const heading=node('div','section-heading');heading.append(node('div','section-icon','↻'),node('h2','','Ôn lại câu/ý đã sai'),node('span','',`${state.retryItems.length} câu/ý`));content.append(heading);
+  const intro=node('div','tf-intro','Các câu/ý dưới đây được lấy từ những phần bạn đã trả lời chưa chính xác. Chọn lại đáp án để kiểm tra ngay.');content.append(intro);
+  state.retryItems.forEach(item=>{
+    if(item.type==='mc')content.append(renderMultipleChoice(item.question,item.questionIndex,'retry',item.key));
+    else content.append(renderTrueFalseGroup(lesson,'retry',item));
+  });
+  renderCompletion({retry:true});
+  const total=state.retryItems.length, answered=Object.keys(state.retryAnswers).length;
+  $('#lessonProgressText').textContent=`${answered} / ${total} câu/ý đã ôn`;
+  $('#lessonProgressBar').style.width=`${total?answered/total*100:0}%`;
+}
+function renderLesson() {
+  const lesson=DATA.bai[state.lessonIndex],content=$('#quizContent');content.replaceChildren();
+  const mcHeading=node('div','section-heading');mcHeading.append(node('div','section-icon','A'),node('h2','','Phần A · Trắc nghiệm'),node('span','',`${lesson.trac_nghiem.length} câu`));content.append(mcHeading);
+  lesson.trac_nghiem.forEach((q,i)=>content.append(renderMultipleChoice(q,i)));
+  const tfHeading=node('div','section-heading');tfHeading.append(node('div','section-icon','B'),node('h2','','Phần B · Đúng / Sai'),node('span','',`${lesson.dung_sai.y.length} ý`));content.append(tfHeading);
+  content.append(renderTrueFalseGroup(lesson));
+  renderCompletion();
+  setLessonProgress();
+}
+function render() {
+  makeHero();
+  if(state.view==='retry')renderRetry();
+  else if(state.view==='retryDone'){
+    $('#quizContent').replaceChildren();renderCompletion({retry:true});
+  }else renderLesson();
+  refreshOverall();
+  if(state.view==='retry'){
+    const total=state.retryItems.length,answered=Object.keys(state.retryAnswers).length;
+    $('#lessonProgressText').textContent=`${answered} / ${total} câu/ý đã ôn`;
+    $('#lessonProgressBar').style.width=`${total?answered/total*100:0}%`;
+  }
+}
+function rerenderKeepingPosition(){
+  const y=window.scrollY;render();requestAnimationFrame(()=>window.scrollTo({top:y,behavior:'instant'}));
+}
+$('#resetAll').addEventListener('click',()=>{
+  if(!confirm('Bạn có chắc muốn xóa toàn bộ kết quả đã làm ở cả 9 bài?'))return;
+  state.answers=DATA.bai.map(()=>({}));state.view='lesson';state.retryItems=[];state.retryAnswers={};render();window.scrollTo({top:0,behavior:'smooth'});
+});
+render();
+</script>
+</body>
+</html>
